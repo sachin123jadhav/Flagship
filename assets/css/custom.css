@@ -184,6 +184,10 @@ footer .abt h5 {
   color: #3fff00;
 }
 
+span.submenu-button::before {
+  margin-top: -5px;
+}
+
 @media (max-width: 1366px) {
   .event .text-wrap {
     padding: 20px;
