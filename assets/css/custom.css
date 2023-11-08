@@ -4,7 +4,7 @@ body {
   font-size: 18px;
 }
 .navbar-brand img {
-  max-width: 190px;
+  width: 190px;
 }
 .bedge {
   color: #4de3ed;
