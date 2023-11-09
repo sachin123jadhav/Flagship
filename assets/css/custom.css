@@ -382,6 +382,40 @@ h1 {
 .owl-controls .owl-buttons .owl-next:after {
   content: "\f105";
 }
+.home2.client .single-item {
+  padding: 0;
+}
+.home2.client .event-wrap {
+  border-radius: 0;
+  border: 0;
+}
+.home2.client .swiper-slide-active.single-item,
+.home2.client .single-item {
+  background: transparent;
+  border: 0;
+}
+.home2.client .single-item img {
+  aspect-ratio: 5/4;
+}
+
+.home2.client .title-text h3 {
+  font-size: 20px;
+}
+.home2.client .title-text h4 {
+  font-size: 18px;
+}
+.home2.client p {
+  font-size: 16px;
+}
+.home2.client button {
+  margin-top: 30px;
+}
+.home2.client .event-wrap {
+  background: #090909;
+}
+.home2.client .event button {
+  max-width: 185px;
+}
 @media only screen and (max-width: 1280px) {
   .post-slide .post-content {
     padding: 0px 15px 25px 15px;
