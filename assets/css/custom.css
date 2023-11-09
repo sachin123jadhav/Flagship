@@ -210,45 +210,7 @@ h1 {
   font-size: 35px;
 }
 
-@media (max-width: 1366px) {
-  .event .text-wrap {
-    padding: 20px;
-  }
-  body,
-  p,
-  ol,
-  ul {
-    font-size: 16px;
-  }
-  .title-text h3 {
-    font-size: 22px;
-  }
-  .title-text h4 {
-    font-size: 18px;
-  }
-  .icon-title.sm img {
-    width: 22px;
-  }
-}
 
-@media (max-width: 991.98px) {
-  .header-menu ul > li a,
-  .home3 .header-menu > ul > li.active > a,
-  .header-menu ul ul li a,
-  .header-menu .submenu-button {
-    color: #090909;
-  }
-  .home3 .header-menu > ul > li.active > .submenu-button::before,
-  .home3 .header-menu > ul > li:hover > .submenu-button::before {
-    color: #000;
-  }
-  .partner .col-md {
-    width: 50%;
-  }
-  .partner .col-md img {
-    margin-bottom: 20px;
-  }
-}
 
 #news-slider {
   margin-top: 80px;
@@ -420,6 +382,51 @@ h1 {
   font-size: 26px;
 }
 .home1.banner img{object-fit: cover; height: 100%;}
+
+@media (max-width: 1366px) {
+  .event .text-wrap {
+    padding: 20px;
+  }
+  body,
+  p,
+  ol,
+  ul {
+    font-size: 16px;
+  }
+  .title-text h3 {
+    font-size: 22px;
+  }
+  .title-text h4 {
+    font-size: 18px;
+  }
+  .icon-title.sm img {
+    width: 22px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header-menu ul > li a,
+  .home3 .header-menu > ul > li.active > a,
+  .header-menu ul ul li a,
+  .header-menu .submenu-button {
+    color: #090909;
+  }
+  .home3 .header-menu > ul > li.active > .submenu-button::before,
+  .home3 .header-menu > ul > li:hover > .submenu-button::before {
+    color: #000;
+  }
+  .partner .col-md {
+    width: 50%;
+  }
+  .partner .col-md img {
+    margin-bottom: 20px;
+  }
+  .home1.banner{padding-bottom: 45px;}
+  .home-contact{margin-top: 20px;}
+}
+
+
+
 @media only screen and (max-width: 1280px) {
   .post-slide .post-content {
     padding: 0px 15px 25px 15px;
