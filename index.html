@@ -143,10 +143,11 @@
       <section class="home1 banner" id="contact">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-1"></div>
+            <div class="col-md-5">
               <img src="assets/images/MainBanner.png" width="100%" alt="" />
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
               <div class="home-contact">
                 <div class="row h-100">
                   <div class="col-md-12">
@@ -184,7 +185,7 @@
                       </div>
                       <div class="row mt-15">
                         <div class="col-lg-12">
-                          <button type="submit" class="button-style1">
+                          <button type="submit" class="button-style1"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <span>Book Slot</span>
                             <span class="arrow-top"
                               ><svg
@@ -210,6 +211,7 @@
                 </div>
               </div>
             </div>
+            <div class="col-lg-1"></div>
           </div>
         </div>
       </section>
@@ -518,13 +520,47 @@
     </footer>
     <!-- end footer area -->
 
-    <section class="">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12"></div>
+   <!-- start modal area -->
+   <div class="inner-page modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            
+            <div class="modal-body" style="padding: 0;">
+              <div class="home-contact">
+                <div class="row h-100">
+                  <div class="col-md-12">
+                    <div class="contact-wrap">
+                     
+
+                   
+
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                         <img class="mt--200" src="assets/images/blink.gif" width="100%" alt="">
+                        </div>
+                       
+                      
+                      </div>
+
+                      <h5 class="mt-10 text-center">Your Slot has been booked successfully</h5>
+                      <div class="row mt-15">
+                        <div class="col-lg-12 text-center">
+                          <button class="button-style1"  data-bs-dismiss="modal" aria-label="Close">
+                            <span>Done</span>
+                            
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</div>
+<!-- end modal area -->
 
     <!-- jquery -->
     <script src="assets/plugins/jquery-3.4.1.min.js"></script>
