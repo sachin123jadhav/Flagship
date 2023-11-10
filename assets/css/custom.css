@@ -124,7 +124,7 @@ ul.unordered {
 
 .icon-title {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 .title-text h3 {
   font-size: 25px;
@@ -150,13 +150,13 @@ ul.unordered {
   flex-direction: column;
   justify-content: space-between;
 }
-.event button {
+.event a {
   display: inline-block;
   max-width: 153px;
   background: #353535;
 }
 
-.event button:hover {
+.event a:hover {
   background: #353535;
 }
 .footer-logo {
@@ -209,8 +209,6 @@ span.submenu-button::before {
 h1 {
   font-size: 35px;
 }
-
-
 
 #news-slider {
   margin-top: 80px;
@@ -381,7 +379,13 @@ h1 {
 .home1.banner h3 {
   font-size: 26px;
 }
-.home1.banner img{object-fit: cover; height: 100%;}
+.home1.banner img {
+  object-fit: cover;
+  height: 100%;
+}
+.icon-title .icon {
+  min-width: 35px;
+}
 
 @media (max-width: 1366px) {
   .event .text-wrap {
@@ -421,17 +425,21 @@ h1 {
   .partner .col-md img {
     margin-bottom: 20px;
   }
-  .home1.banner{padding-bottom: 45px;}
-  .home-contact{margin-top: 20px;}
+  .home1.banner {
+    padding-bottom: 45px;
+  }
+  .home-contact {
+    margin-top: 20px;
+  }
 }
-
-
 
 @media only screen and (max-width: 1280px) {
   .post-slide .post-content {
     padding: 0px 15px 25px 15px;
   }
-  .home-contact{padding: 20px 10px;}
+  .home-contact {
+    padding: 20px 10px;
+  }
 }
 
 .header-menu {
