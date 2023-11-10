@@ -811,7 +811,7 @@ p {
 5.2: banner
 ==================================================*/
 .home1.banner {
-  padding-top: 165px;
+  padding-top: 130px;
   padding-bottom: 100px;
   position: relative;
 }
@@ -823,7 +823,7 @@ p {
   text-transform: capitalize;
   font-family: var(--roboto);
   font-weight: 500;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
 }
 .home1.banner h2 {
   font-size: 56px;
