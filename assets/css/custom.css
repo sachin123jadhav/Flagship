@@ -152,8 +152,12 @@ ul.unordered {
 }
 .event a {
   display: inline-block;
-  max-width: 153px;
+  max-width: 183px;
   background: #353535;
+  text-align: center;
+}
+.el .event a {
+  margin-top: 30px;
 }
 
 .event a:hover {
