@@ -390,6 +390,7 @@ h1 {
 .icon-title .icon {
   min-width: 35px;
 }
+::placeholder{color: #fff;}
 
 @media (max-width: 1366px) {
   .event .text-wrap {
