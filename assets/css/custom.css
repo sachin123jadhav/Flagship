@@ -437,10 +437,12 @@ h1 {
   .home1.banner {
     padding-bottom: 45px;
   }
-  .home-contact {
-    margin-top: 20px;
-  }
+ 
 }
+
+
+
+
 
 @media only screen and (max-width: 1280px) {
   .post-slide .post-content {
@@ -454,3 +456,11 @@ h1 {
 .header-menu {
   opacity: 0;
 }
+
+@media (max-width: 600px) {
+
+  .home-contact {
+    margin-top: 20px;
+  }
+}
+
