@@ -815,16 +815,7 @@ p {
   padding-bottom: 100px;
   position: relative;
 }
-.home1.banner span {
-  display: inline-block;
-  font-size: 18px;
-  line-height: 28px;
-  color: var(--white);
-  text-transform: capitalize;
-  font-family: var(--roboto);
-  font-weight: 500;
-  padding-bottom: 0px;
-}
+ 
 .home1.banner h2 {
   font-size: 56px;
   color: var(--white);

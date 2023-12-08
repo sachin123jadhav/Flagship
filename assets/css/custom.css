@@ -223,7 +223,61 @@ h1 {
 
 .banner video {
   width: 100%;
-  position: absolute;z-index: -1;
+  position: absolute;
+  z-index: -1;
+}
+
+#circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid 1px #fff;
+  position: absolute;
+  pointer-events: none;
+  transition: transform 0.2s ease-out; /* Added transition */
+  transform: translate(-50%, -50%); /* Center the circle initially */
+  top: 50%;
+  left: 50%;
+  display: flex;
+
+  align-items: center;
+
+  .circle_text {
+    font-size: 16px;
+    span {
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
+.banner-wrap {
+  .discount {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .discount_img {
+      img {
+        max-width: 30px;
+        width: 100%;
+      }
+    }
+
+    .discount-text {
+      h2 {
+        font-size: 15px;
+        line-height: 1;
+        margin-left: 5px;
+        padding: 0;
+      }
+    }
+  }
+  .banner-head {
+    span {
+      color: #3fff00;
+    }
+  }
 }
 
 @media (max-width: 1366px) {
@@ -248,9 +302,6 @@ h1 {
 }
 
 @media (min-width: 1200px) {
-  .top-contact {
-    padding: 0 100px;
-  }
 }
 
 @media (max-width: 991.98px) {

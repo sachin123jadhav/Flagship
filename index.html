@@ -66,6 +66,19 @@
     <link rel="stylesheet" href="assets/css/custom.css" />
     <!-- spacing -->
     <link rel="stylesheet" href="assets/css/rs-spacing.css" />
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const circle = document.getElementById('circle');
+  
+        document.addEventListener('mousemove', function (event) {
+          // Update the position of the circle based on mouse coordinates
+          const x = event.clientX;
+          const y = event.clientY;
+          circle.style.left = x + 'px';
+          circle.style.top = y + 'px';
+        });
+      });
+    </script>
   </head>
   <body>
     <!-- start preloader area -->
@@ -142,85 +155,46 @@
       <!-- end menubar area -->
 
       <!-- start banner area -->
-      <section class="home1 banner" id="contact">
+      <section class="home1 banner" id="home-banner">
 
-        <video playsinline autoplay muted loop poster="cake.jpg">
+        <!-- <video playsinline autoplay muted loop poster="cake.jpg">
           <source src="assets/images/computer-graphics-background.webm" type="video/webm">
           Your browser does not support the video tag.
-      </video>
+      </video> -->
 
         <div class="container">
           <div class="top-contact">
+
           <div class="row">
-            <div class="col-lg-1  col-sm-12"></div>
-            <div class="col-lg-5 col-sm-6">
-              <img src="assets/images/MainBanner.png" width="100%" alt="" />
+            <a href="#">
+            <div id="circle">
+<p class="circle_text">
+<span>View</span><span><img src="assets/images/Arrow-Up.svg" width="100%" alt=""> </span>  
+Programs
+</p></a>
             </div>
-            <div class="col-lg-5 col-sm-6">
-              <div class="home-contact">
-                <div class="row h-100">
-                  <div class="col-md-12">
-                    <div class="contact-wrap">
-                      <div class="bedge">Register Now
-                      </div>
+           
+            <div class="col-lg-6 col-sm-6">
 
-                      <h3 class="mb-25">Join Our FREE Webinar</h3>
-
-                      <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                          <input
-                            type="text"
-                            placeholder="Name"
-                            required
-                            class="input-reply"
-                          />
-                        </div>
-                        <div class="col-lg-12 col-md-12">
-                          <input
-                            type="tel"
-                            placeholder="Phone"
-                            required
-                            class="input-reply"
-                          />
-                        </div>
-                        <div class="col-lg-12">
-                          <input
-                            type="email"
-                            placeholder="Email"
-                            required
-                            class="input-reply"
-                          />
-                        </div>
-                      </div>
-                      <div class="row mt-15">
-                        <div class="col-lg-12">
-                          <button type="submit" class="button-style1"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <span>Book Slot</span>
-                            <span class="arrow-top"
-                              ><svg
-                                width="25"
-                                height="25"
-                                viewBox="0 0 16 16"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M5.48712 11.4539L11.3565 5.5845M11.3565 5.5845L6.39011 5.5845M11.3565 5.5845L11.3565 10.5509"
-                                  stroke="white"
-                                  stroke-width="1.14931"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                /></svg
-                            ></span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+              <div class="banner-wrap">
+                <div class="discount">
+                  <div class="discount_img">
+<img src="assets/images/Discount.svg" width="100%" alt="">
                   </div>
+                  <div class="discount-text">
+<h2>20% DISCOUNT TO FIRST 100 STUDENTS</h2>
+                  </div>
+                  
                 </div>
+                <h2 class="banner-head">The Young 
+                  Generation
+                  <span>Entrepreneurship</span>
+                  Program.</h2>
               </div>
+              
             </div>
-            <div class="col-lg-1  col-sm-12"></div>
+            
+           
           </div>
         </div>
         </div>
