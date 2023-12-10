@@ -320,11 +320,12 @@ bottom: -20px;  left: 0;  background-position: left bottom;  background-size: 10
 .flag-gpt-que .gpt-img img{max-width: 60px;}
 .flag-gpt-que{padding: 50px 45px;}
 .flag-gpt-que .input-group{background: #0a0a0a;padding: 15px 0;}
-.flag-gpt-answer .input-group .form-control{background-color: transparent;border: none;color: #fff;}
+.flag-gpt-que .input-group input.form-control{background-color: transparent;border: none;color: #fff;}
+.flag-gpt-que button{border: none;}
 .home2.client .single-item {transform: scale(.8); }
 .home2.client .swiper-slide-active.single-item {transform: scale(1); z-index: 999; }
 /* .swiper-container{overflow: visible;} */
-
+.input-group > .form-control:focus{box-shadow: none;}
 
 
 
