@@ -164,14 +164,14 @@ $(function () {
     },
   });
 
-  var swiper = new Swiper(".client-slider2", {
+  var swiper = new Swiper(".blog-slider", {
     observer: true,
     observeParents: true,
     loop: true,
     centeredSlides: true,
-    spaceBetween: -40,
+    spaceBetween: 30,
     autoplay: {
-      delay: 3000,
+      delay: 5000, // 2 seconds
     },
     breakpoints: {
       1920: {
@@ -190,15 +190,45 @@ $(function () {
         slidesPerView: 1,
       },
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
     pagination: {
+      el: ".swiper-pagination",
       clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next", // Add this line to enable the next arrow
+      prevEl: ".swiper-button-prev", // Add this line to enable the previous arrow
     },
   });
 
+  var swiper = new Swiper(".blog-slider", {
+    observer: true,
+    observeParents: true,
+    loop: true,
+    centeredSlides: true,
+    spaceBetween: 30,
+    autoPlay: 3000,
+    breakpoints: {
+      1920: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      320: {
+        slidesPerView: 1,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
   /*=====================================================================
         10: client slider
     ======================================================================*/
