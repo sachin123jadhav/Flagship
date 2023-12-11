@@ -1,761 +1,1058 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- favicon css -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.jpg"
+      type="image/x-icon"
+    />
 
-  <!-- favicon css -->
-  <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/x-icon" />
+    <!-- roboto font family css -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- roboto font family css -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+    <!-- heebo font family css -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- heebo font family css -->
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>The Young Generation Program.</title>
 
-  <title>The Young
-    Generation
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
 
-    Program.</title>
+    <!-- flaticon -->
+    <link rel="stylesheet" href="assets/font/flaticon.css" />
 
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-  <!-- flaticon -->
-  <link rel="stylesheet" href="assets/font/flaticon.css" />
+    <!-- menu -->
+    <link rel="stylesheet" href="assets/css/menu.css" />
 
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- venobox -->
+    <link rel="stylesheet" href="assets/css/venobox.css" />
 
-  <!-- menu -->
-  <link rel="stylesheet" href="assets/css/menu.css" />
+    <!-- swiper-slider -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-  <!-- venobox -->
-  <link rel="stylesheet" href="assets/css/venobox.css" />
+    <!-- skillbar -->
+    <link rel="stylesheet" href="assets/css/pro-bars.css" />
 
-  <!-- swiper-slider -->
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- skillbar -->
-  <link rel="stylesheet" href="assets/css/pro-bars.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
-  <!-- style -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <!-- spacing -->
+    <link rel="stylesheet" href="assets/css/rs-spacing.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const circle = document.getElementById("circle");
 
-  <!-- responsive -->
-  <link rel="stylesheet" href="assets/css/responsive.css" />
-
-  <!-- style -->
-  <link rel="stylesheet" href="assets/css/custom.css" />
-  <!-- spacing -->
-  <link rel="stylesheet" href="assets/css/rs-spacing.css" />
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const circle = document.getElementById('circle');
-
-      document.addEventListener('mousemove', function (event) {
-        // Update the position of the circle based on mouse coordinates
-        const x = event.clientX;
-        const y = event.clientY;
-        circle.style.left = x + 'px';
-        circle.style.top = y + 'px';
+        document.addEventListener("mousemove", function (event) {
+          // Update the position of the circle based on mouse coordinates
+          const x = event.clientX;
+          const y = event.clientY;
+          circle.style.left = x + "px";
+          circle.style.top = y + "px";
+        });
       });
-    });
-  </script>
-</head>
+    </script>
+  </head>
 
-<body>
-  <!-- start preloader area -->
-  <div class="preloader">
-    <div class="circle1"></div>
-    <div class="circle2"></div>
-  </div>
-  <!-- end preloader area -->
-
-  <!-- start top-tp button area -->
-  <button class="home3 top-btn">
-    <i class="fas fa-angle-double-up"></i>
-  </button>
-  <!-- end top-tp button area -->
-
-  <!-- start header area -->
-  <header>
-    <!-- start menubar area -->
-    <section class="home1 home3 menubar">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-12">
-            <nav class="navbar p-0">
-              <a class="navbar-brand p-0" href="index.html">
-                <img src="assets/images/Logo.svg" alt="Logo" width="100%" />
-              </a>
-              <div class="header-menu position-static">
-                <ul class="menu">
-                  <li class="active">
-
-                    <a href="#!">
-                      <p>01</p>Resources
-                    </a>
-                    <ul>
-                      <li><a href="#">Resources 1</a></li>
-                      <li><a href="#">Resources 2</a></li>
-                      <li><a href="#">Resources 3</a></li>
-                    </ul>
-                  </li>
-
-                  <li>
-                    <a href="#!">
-                      <p>02</p>Programs
-                    </a>
-                    <ul>
-                      <li><a href="#">Programs</a></li>
-                      <li><a href="#">Programs</a></li>
-                    </ul>
-                  </li>
-
-                  <li>
-                    <a href="#!">
-                      <p>03</p>Opportunities/Events
-                    </a>
-                    <ul>
-                      <li><a href="#">Opportunities/Events</a></li>
-                      <li><a href="#">Opportunities/Events</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#!">
-                      <p>04</p>Success Stories
-                    </a>
-                    <ul>
-                      <li><a href="#">Success Stories</a></li>
-                      <li><a href="#">Success Stories</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="right-part">
-
-                <a href="#" class="button-style4 ml-10">Register Now</a>
-              </div>
-            </nav>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- end menubar area -->
-
-
-  </header>
-  <!-- end header area -->
-  <!-- start banner area -->
-  <section class="home1 banner" id="home-banner">
-
-    <video playsinline autoplay muted loop poster="assets/images/bg.svg">
-      <source src="assets/images/computer-graphics-background.webm" type="video/webm">
-      Your browser does not support the video tag.
-    </video>
-
-    <div class="container">
-      <div class="top-contact">
-
-        <div class="row">
-
-          <div id="circle">
-            <a href="#">
-              <p class="circle_text">
-                <span>View</span><span><img src="assets/images/Arrow-Up.svg" width="100%" alt=""> </span>
-                Programs
-              </p>
-            </a>
-          </div>
-
-          <div class="col-lg-6 col-sm-6">
-
-            <div class="banner-wrap">
-              <div class="discount">
-                <div class="discount_img">
-                  <img src="assets/images/Discount.svg" width="100%" alt="">
-                </div>
-                <div class="discount-text">
-                  <h2>20% DISCOUNT TO FIRST 100 STUDENTS</h2>
-                </div>
-
-              </div>
-              <h2 class="banner-head">The Young <br>
-                Generation
-                <span>Entrepreneurship</span>
-                Program.
-              </h2>
-              <p>Join our AI-boosted entrepreneurial programs, where students build businesses from scratch while also
-                connecting with tech titans from Silicon Valley.</p>
-
-
-            </div>
-
-          </div>
-
-
-        </div>
-      </div>
+  <body>
+    <!-- start preloader area -->
+    <div class="preloader">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
     </div>
-  </section>
-  <!-- end banner area -->
+    <!-- end preloader area -->
 
-  <section class="webinar pt-100 pb-100">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+    <!-- start top-tp button area -->
+    <button class="home3 top-btn">
+      <i class="fas fa-angle-double-up"></i>
+    </button>
+    <!-- end top-tp button area -->
 
-          <h2 class="sec-title text-center mb-35">Upcoming Webinar or latest event
-          </h2>
-
-        </div>
-      </div>
-      <div class="box-sec">
-      <div class="row">
-        <div class="col-md-8">
-          <img src="assets/images/sec-1.jpg" width="100%" alt="">
-        </div>
-        <div class="col-md-4">
-          <div class="text-setion">
-            <div class="text-wrap">
-
-
-
-
-              <h3 class="mb-15">Flag Pitch Event
-              </h3>
-
-
-
-              <div class="desc">
-                <p class=" ">A chance for young entrepreneurs to bring their startup ideas to life by pitching them to
-                  prominent investors of Silicon Valley and securing up to $50k in funding.
-                </p>
-
-
-
-                <div class="row mt-15 mb-15">
-                  <div class="col-md-6">
-                    <div class="icon-title sm mb-10">
-                      <div class="icon">
-                        <img src="assets/images/calender.svg" alt="">
-                      </div>
-                      <div class="title-text">
-                        <h4> Date: 4th Nov </h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="icon-title sm mb-10">
-                      <div class="icon">
-                        <img src="assets/images/fa_child.svg" alt="">
-                      </div>
-                      <div class="title-text">
-                        <h4>Age: 8 to 18 </h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="icon-title sm mb-10">
-                      <div class="icon">
-                        <img src="assets/images/clock.svg" alt="">
-                      </div>
-                      <div class="title-text">
-                        <h4>6:00PM IST</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <a href="#contact" class="button-style1">
-                <span>Event Details</span>
-                <span class="arrow-top"><svg width="25" height="25" viewBox="0 0 16 16" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M5.48712 11.4539L11.3565 5.5845M11.3565 5.5845L6.39011 5.5845M11.3565 5.5845L11.3565 10.5509"
-                      stroke="white" stroke-width="1.14931" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg></span>
-              </a>
-            </div>
-
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-<div class="flag-gpt">
-  <div class="row">
-    <div class="col-md-12">
-
-      <h2 class="sec-title text-center mb-35"> <span>FlagGPT:</span>  Your Around-the-Clock Mentor
-      </h2>
-<div class="row">
-  <div class="col-md-3"></div>
-  <div class="col-md-6"> <p class="text-center text-grey">Flagship Club provides a mentor who offers complete guidance and expertise to help the upcoming CXOs flourish on their entrepreneurial journey.</p></div>
-  <div class="col-md-3"></div>
-</div>
-     
-
-    </div>
-  </div>
-
-  <div class="flag-gpt-box">
-    <div class="flag-gpt-header">
-<div class="gpt-icon">
-<img src="assets/images/AvatarUser.svg" alt="">
-</div>
-<div class="gpt-text">
-<h4>What is a FlagGpt?</h4>
-</div>
-    </div>
-    <div class="flag-gpt-answer">
-      <div class="gpt-icon">
-        <img src="assets/images/ChatGPT.svg" alt="">
-        </div>
-        <div class="gpt-text">
-        <p>FlagGpt is a computer program that simulates human conversation through voice commands or text chats or both. It can be integrated with various messaging platforms like Facebook Messenger, WhatsApp, WeChat, etc. and can be used for a variety of purposes, such as customer service, entertainment, and e-commerce.
-        </p>
-        </div>
-    </div>
-    <div class="flag-gpt-que">
-
-      <div class="gpt-img">
-        <img src="assets/images/blink1.gif" alt="">
-      </div>
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Start asking your questions" aria-label="Start asking your questions" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button"><img src="assets/images/send.svg" alt=""></button>
-        </div>
-      </div>
-      
-    </div>
-
-  </div>
-
-</div>
-
-
-
-    </div>
-  </section>
-
-     <!-- start client area -->
-     <section class="home2 client p-120">
-      <div class="container">
+    <!-- start header area -->
+    <header>
+      <!-- start menubar area -->
+      <section class="home1 home3 menubar">
+        <div class="container">
           <div class="row">
-              <div class="col-lg-12">
-                  <div class="section-title text-center">
-                      <h6>clients testimonial</h6>
-                      <h3>what our clients say?</h3>
-                  </div>
-              </div>
-              <div class="col-lg-12">
-               
-                  <div class="client-slider2 swiper-container">
-                      <div class="swiper-wrapper">
-                          <div class="single-item swiper-slide">
-                            <div class="single-blog">
-                              <div class="image">
-                                  <a href="blog-detail.html">
-                                      <img src="assets/images/MainBanner.png" alt="Blog">
-                                  </a>
-                              </div>
-                              <div class="content">
-                                  <ul class="d-flex align-item-center">
-                                      <li><a href="#!"><i class="fas fa-user"></i>endith smith</a></li>
-                                      <li><a href="#!"><i class="fas fa-comment"></i>may 21, 21</a></li>
-                                  </ul>
-                                  <a href="blog-detail.html">
-                                      <h5>Great SEO Service we have ever seen in history</h5>
-                                  </a>
-                                  <p>We help ambitious businesses like yours generate more profits </p>
-                                  <a href="blog-detail.html" class="read-more">read more</a>
-                              </div>
-                          </div>
-                          </div>
-                          <div class="single-item swiper-slide">
-                            <div class="single-blog">
-                              <div class="image">
-                                  <a href="blog-detail.html">
-                                      <img src="assets/images/MainBanner.png" alt="Blog">
-                                  </a>
-                              </div>
-                              <div class="content">
-                                  <ul class="d-flex align-item-center">
-                                      <li><a href="#!"><i class="fas fa-user"></i>endith smith</a></li>
-                                      <li><a href="#!"><i class="fas fa-comment"></i>may 21, 21</a></li>
-                                  </ul>
-                                  <a href="blog-detail.html">
-                                      <h5>Great SEO Service we have ever seen in history</h5>
-                                  </a>
-                                  <p>We help ambitious businesses like yours generate more profits </p>
-                                  <a href="blog-detail.html" class="read-more">read more</a>
-                              </div>
-                          </div>
-                          </div>
-                          <div class="single-item swiper-slide">
-                            <div class="single-blog">
-                              <div class="image">
-                                  <a href="blog-detail.html">
-                                      <img src="assets/images/MainBanner.png" alt="Blog">
-                                  </a>
-                              </div>
-                              <div class="content">
-                                  <ul class="d-flex align-item-center">
-                                      <li><a href="#!"><i class="fas fa-user"></i>endith smith</a></li>
-                                      <li><a href="#!"><i class="fas fa-comment"></i>may 21, 21</a></li>
-                                  </ul>
-                                  <a href="blog-detail.html">
-                                      <h5>Great SEO Service we have ever seen in history</h5>
-                                  </a>
-                                  <p>We help ambitious businesses like yours generate more profits </p>
-                                  <a href="blog-detail.html" class="read-more">read more</a>
-                              </div>
-                          </div>
-                          </div>
-                          <div class="single-item swiper-slide">
-                            <div class="single-blog">
-                              <div class="image">
-                                  <a href="blog-detail.html">
-                                      <img src="assets/images/MainBanner.png" alt="Blog">
-                                  </a>
-                              </div>
-                              <div class="content">
-                                  <ul class="d-flex align-item-center">
-                                      <li><a href="#!"><i class="fas fa-user"></i>endith smith</a></li>
-                                      <li><a href="#!"><i class="fas fa-comment"></i>may 21, 21</a></li>
-                                  </ul>
-                                  <a href="blog-detail.html">
-                                      <h5>Great SEO Service we have ever seen in history</h5>
-                                  </a>
-                                  <p>We help ambitious businesses like yours generate more profits </p>
-                                  <a href="blog-detail.html" class="read-more">read more</a>
-                              </div>
-                          </div>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- Add Pagination -->
-                  <!-- Navigation -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-                  <div class="swiper-pagination"></div>
-             
-            </div>
-          </div>
-      </div>
-  </section>
-  <!-- end client area -->
-
-
-  <section class="partner mb-30">
-    <div class="container">
-      <div class="row mb-30">
-        <div class="col-md-12">
-          <h4 class="title mb-20">
-            <h4 class="title ">Partners</h4>
-          </h4>
-
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md"><img src="assets/images/1.png" width="100%" alt=""></div>
-        <div class="col-md"><img src="assets/images/2.png" width="100%" alt=""></div>
-        <div class="col-md"><img src="assets/images/3.png" width="100%" alt=""></div>
-        <div class="col-md"><img src="assets/images/4.png" width="100%" alt=""></div>
-        <div class="col-md"><img src="assets/images/5.png" width="100%" alt=""></div>
-
-      </div>
-    </div>
-
-  </section>
-
-  <section class="event mt-80 sm-mt-0">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12">
-          <h4 class="title mb-20 sm-mb-0">
-            <h4 class="title mb-20 sm-mb-0">Other Events</h4>
-          </h4>
-        </div>
-      </div>
-      <div class="event-wrap mt-30 mb-30 sm-mb-0">
-        <div class="row">
-          <div class="col-md-8">
-            <img src="assets/images/Flagship.png" width="100%" alt="">
-          </div>
-          <div class="col-md-4">
-
-            <div class="text-wrap">
-
-              <div class="icon-title ">
-                <div class="icon">
-                  <img src="assets/images/Presentation.svg" alt="">
-                </div>
-                <div class="title-text">
-                  <h3>From Idea to Launch: A Student's Guide to Starting a Business
-                  </h3>
-                </div>
-              </div>
-
-              <div class="desc">
-                <p class=" ">Get processed with the startup idea to launch it. Be ready to imbibe the complete guidance
-                  about how to start a business.
-                </p>
-
-                <div class="icon-title sm mb-10 invisible">
-                  <div class="icon">
-                    <img src="assets/images/calender.svg" alt="">
-                  </div>
-                  <div class="title-text">
-                    <h4>1st July 2022, Friday </h4>
-                  </div>
-                </div>
-
-               
-
-                <div class="icon-title sm invisible">
-                  <div class="icon">
-                    <img src="assets/images/clock.svg" alt="">
-                  </div>
-                  <div class="title-text">
-                    <h4>6:00PM IST</h4>
-                  </div>
-                </div>
-              </div>
-
-
-
-              <a href="#contact" class="button-style1">
-                <span>Book Slot</span>
-                <span class="arrow-top"><svg width="25" height="25" viewBox="0 0 16 16" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M5.48712 11.4539L11.3565 5.5845M11.3565 5.5845L6.39011 5.5845M11.3565 5.5845L11.3565 10.5509"
-                      stroke="white" stroke-width="1.14931" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg></span>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="event-wrap mt-30 mb-30">
-        <div class="row">
-          <div class="col-md-8">
-            <img src="assets/images/Flagship2.jpeg" width="100%" alt="">
-          </div>
-          <div class="col-md-4">
-
-            <div class="text-wrap">
-
-              <div class="icon-title">
-                <div class="icon">
-                  <img src="assets/images/Presentation.svg" alt="">
-                </div>
-                <div class="title-text">
-                  <h3>How to Master the Art of Pitching to Investors
-                  </h3>
-                </div>
-              </div>
-
-              <div class="desc">
-                <p class="">Learn the process of pitching Global Company Investors like CXOs, industry titans etc. and
-                  enhance communication and networking skills with them.
-                </p>
-
-                <div class="icon-title sm mb-10 invisible">
-                  <div class="icon">
-                    <img src="assets/images/calender.svg" alt="">
-                  </div>
-                  <div class="title-text">
-                    <h4>1st July 2022, Friday </h4>
-                  </div>
-                </div>
-               
-                <div class="icon-title sm invisible">
-                  <div class="icon">
-                    <img src="assets/images/clock.svg" alt="">
-                  </div>
-                  <div class="title-text">
-                    <h4>6:00PM IST</h4>
-                  </div>
-                </div>
-                <div class="icon-title sm invisible">
-                  <div class="icon">
-                    <img src="assets/images/clock.svg" alt="">
-                  </div>
-                  <div class="title-text">
-                    <h4>6:00PM IST</h4>
-                  </div>
-                </div>
-              </div>
-
-
-
-              <a href="#contact" class="button-style1">
-                <span>Book Slot</span>
-                <span class="arrow-top"><svg width="25" height="25" viewBox="0 0 16 16" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M5.48712 11.4539L11.3565 5.5845M11.3565 5.5845L6.39011 5.5845M11.3565 5.5845L11.3565 10.5509"
-                      stroke="white" stroke-width="1.14931" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg></span>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <!-- start footer area -->
-  <footer class="home3 footer">
-
-
-
-
-    <!-- start footer-bottom area -->
-    <section class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="copyright">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-7">
-                  <p>Copyright &copy; 2023 Flagship. All Rights Reserved.</p>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-5">
-                  <ul class="d-flex justify-content-end">
-                    <li>
-                      <a target="_blank" href="instagram.com/flagshipclub_official"><i
-                          class="flaticon flaticon-instagram"></i></a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="facebook.com/flagshipclubofficial"><i
-                          class="flaticon flaticon-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="https://twitter.com/FlagshipClub"><i
-                          class="flaticon flaticon-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="https://www.linkedin.com/company/flagshipclub/"><i
-                          class="flaticon flaticon-linkedin"></i></a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="https://www.youtube.com/@flagshipclub"><i
-                          class="flaticon flaticon-youtube-logotype"></i></a>
+            <div class="col-lg-12">
+              <nav class="navbar p-0">
+                <a class="navbar-brand p-0" href="index.html">
+                  <img src="assets/images/Logo.svg" alt="Logo" width="100%" />
+                </a>
+                <div class="header-menu position-static">
+                  <ul class="menu">
+                    <li class="active">
+                      <a href="#!">
+                        <p>01</p>
+                        Resources
+                      </a>
+                      <ul>
+                        <li><a href="#">Resources 1</a></li>
+                        <li><a href="#">Resources 2</a></li>
+                        <li><a href="#">Resources 3</a></li>
+                      </ul>
                     </li>
 
+                    <li>
+                      <a href="#!">
+                        <p>02</p>
+                        Programs
+                      </a>
+                      <ul>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="#">Programs</a></li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a href="#!">
+                        <p>03</p>
+                        Opportunities/Events
+                      </a>
+                      <ul>
+                        <li><a href="#">Opportunities/Events</a></li>
+                        <li><a href="#">Opportunities/Events</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#!">
+                        <p>04</p>
+                        Success Stories
+                      </a>
+                      <ul>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
+                <div class="right-part">
+                  <a href="#" class="button-style4 ml-10">Register Now</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end menubar area -->
+    </header>
+    <!-- end header area -->
+    <!-- start banner area -->
+    <section class="home1 banner" id="home-banner">
+      <video playsinline autoplay muted loop poster="assets/images/bg.svg">
+        <source
+          src="assets/images/computer-graphics-background.webm"
+          type="video/webm"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="container">
+        <div class="top-contact">
+          <div class="row">
+            <div id="circle">
+              <a href="#">
+                <p class="circle_text">
+                  <span>View</span
+                  ><span
+                    ><img
+                      src="assets/images/Arrow-Up.svg"
+                      width="100%"
+                      alt=""
+                    />
+                  </span>
+                  Programs
+                </p>
+              </a>
+            </div>
+
+            <div class="col-lg-6 col-sm-6">
+              <div class="banner-wrap">
+                <div class="discount">
+                  <div class="discount_img">
+                    <img src="assets/images/Discount.svg" width="100%" alt="" />
+                  </div>
+                  <div class="discount-text">
+                    <h2>20% DISCOUNT TO FIRST 100 STUDENTS</h2>
+                  </div>
+                </div>
+                <h2 class="banner-head">
+                  The Young <br />
+                  Generation
+                  <span>Entrepreneurship</span>
+                  Program.
+                </h2>
+                <p>
+                  Join our AI-boosted entrepreneurial programs, where students
+                  build businesses from scratch while also connecting with tech
+                  titans from Silicon Valley.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- end footer-bottom area -->
-  </footer>
-  <!-- end footer area -->
+    <!-- end banner area -->
 
-  <!-- start modal area -->
-  <div class="inner-page modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
+    <section class="webinar pt-100 pb-60">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="sec-title text-center mb-35">
+              Upcoming Webinar or latest event
+            </h2>
+          </div>
+        </div>
+        <div class="box-sec">
+          <div class="row">
+            <div class="col-md-8">
+              <img src="assets/images/sec-1.jpg" width="100%" alt="" />
+            </div>
+            <div class="col-md-4">
+              <div class="text-setion">
+                <div class="text-wrap">
+                  <h3 class="mb-15">Flag Pitch Event</h3>
 
-        <div class="modal-body" style="padding: 0;">
-          <div class="home-contact">
-            <div class="row h-100">
-              <div class="col-md-12">
-                <div class="contact-wrap">
+                  <div class="desc">
+                    <p class=" ">
+                      A chance for young entrepreneurs to bring their startup
+                      ideas to life by pitching them to prominent investors of
+                      Silicon Valley and securing up to $50k in funding.
+                    </p>
+
+                    <div class="row mt-15 mb-15">
+                      <div class="col-md-6">
+                        <div class="icon-title sm mb-10">
+                          <div class="icon">
+                            <img src="assets/images/calender.svg" alt="" />
+                          </div>
+                          <div class="title-text">
+                            <h4>Date: 4th Nov</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="icon-title sm mb-10">
+                          <div class="icon">
+                            <img src="assets/images/fa_child.svg" alt="" />
+                          </div>
+                          <div class="title-text">
+                            <h4>Age: 8 to 18</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="icon-title sm mb-10">
+                          <div class="icon">
+                            <img src="assets/images/clock.svg" alt="" />
+                          </div>
+                          <div class="title-text">
+                            <h4>6:00PM IST</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#contact" class="button-style1">
+                    <span>Event Details</span>
+                    <span class="arrow-top"
+                      ><svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.48712 11.4539L11.3565 5.5845M11.3565 5.5845L6.39011 5.5845M11.3565 5.5845L11.3565 10.5509"
+                          stroke="white"
+                          stroke-width="1.14931"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flag-gpt">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="sec-title text-center mb-35">
+                <span>FlagGPT:</span> Your Around-the-Clock Mentor
+              </h2>
+              <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                  <p class="text-center text-grey">
+                    Flagship Club provides a mentor who offers complete guidance
+                    and expertise to help the upcoming CXOs flourish on their
+                    entrepreneurial journey.
+                  </p>
+                </div>
+                <div class="col-md-3"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flag-gpt-box">
+            <div class="flag-gpt-header">
+              <div class="gpt-icon">
+                <img src="assets/images/AvatarUser.svg" alt="" />
+              </div>
+              <div class="gpt-text">
+                <h4>What is a FlagGpt?</h4>
+              </div>
+            </div>
+            <div class="flag-gpt-answer">
+              <div class="gpt-icon">
+                <img src="assets/images/ChatGPT.svg" alt="" />
+              </div>
+              <div class="gpt-text">
+                <p>
+                  FlagGpt is a computer program that simulates human
+                  conversation through voice commands or text chats or both. It
+                  can be integrated with various messaging platforms like
+                  Facebook Messenger, WhatsApp, WeChat, etc. and can be used for
+                  a variety of purposes, such as customer service,
+                  entertainment, and e-commerce.
+                </p>
+              </div>
+            </div>
+            <div class="flag-gpt-que">
+              <div class="gpt-img">
+                <img src="assets/images/blink1.gif" alt="" />
+              </div>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Start asking your questions"
+                  aria-label="Start asking your questions"
+                  aria-describedby="basic-addon2"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">
+                    <img src="assets/images/send.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- start client area -->
+    <section class="home2 client powring-ai pb-120">
+      <div class="container">
+        <div class="row mb-50">
+          <div class="col-md-12">
+            <h2 class="sec-title text-center mb-25">
+              Powering with <span>AI</span>
+            </h2>
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <p class="text-center text-grey">
+                  Give wings to your AI entrepreneurial dreams with flagship
+                  expertise and accelerate your journey.
+                </p>
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 relative">
+            <div class="client-slider2 swiper-container">
+              <div class="swiper-wrapper">
+                <div class="single-item swiper-slide">
+                  <div class="single-blog">
+                    <div class="image">
+                      <a href="#">
+                        <img
+                          src="assets/images/blog/img-1.png"
+                          width="100%"
+                          alt="Blog"
+                        />
+                      </a>
+                    </div>
+                    <div class="content">
+                      <ul class="d-flex align-item-center blog-subheading">
+                        <li>
+                          <a href="#!">AI Integration 01</a>
+                        </li>
+                      </ul>
+                      <a href="#">
+                        <h5>SummariX</h5>
+                      </a>
+                      <p>
+                        Description about the event and the speaker. Lorem ipsum
+                        dolor sit amet consectetur. Pulvinar diam aenean mus
+                        dignissim eleifend consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-item swiper-slide">
+                  <div class="single-blog">
+                    <div class="image">
+                      <a href="#">
+                        <img
+                          src="assets/images/blog/img-2.png"
+                          width="100%"
+                          alt="Blog"
+                        />
+                      </a>
+                    </div>
+                    <div class="content">
+                      <ul class="d-flex align-item-center blog-subheading">
+                        <li>
+                          <a href="#!">AI Integration 01</a>
+                        </li>
+                      </ul>
+                      <a href="#">
+                        <h5>SummariX</h5>
+                      </a>
+                      <p>
+                        Description about the event and the speaker. Lorem ipsum
+                        dolor sit amet consectetur. Pulvinar diam aenean mus
+                        dignissim eleifend consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-item swiper-slide">
+                  <div class="single-blog">
+                    <div class="image">
+                      <a href="#">
+                        <img
+                          src="assets/images/blog/img-1.png"
+                          width="100%"
+                          alt="Blog"
+                        />
+                      </a>
+                    </div>
+                    <div class="content">
+                      <ul class="d-flex align-item-center blog-subheading">
+                        <li>
+                          <a href="#!">AI Integration 01</a>
+                        </li>
+                      </ul>
+                      <a href="#">
+                        <h5>SummariX</h5>
+                      </a>
+                      <p>
+                        Description about the event and the speaker. Lorem ipsum
+                        dolor sit amet consectetur. Pulvinar diam aenean mus
+                        dignissim eleifend consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-item swiper-slide">
+                  <div class="single-blog">
+                    <div class="image">
+                      <a href="#">
+                        <img
+                          src="assets/images/blog/img-2.png"
+                          width="100%"
+                          alt="Blog"
+                        />
+                      </a>
+                    </div>
+                    <div class="content">
+                      <ul class="d-flex align-item-center blog-subheading">
+                        <li>
+                          <a href="#!">AI Integration 01</a>
+                        </li>
+                      </ul>
+                      <a href="#">
+                        <h5>SummariX</h5>
+                      </a>
+                      <p>
+                        Description about the event and the speaker. Lorem ipsum
+                        dolor sit amet consectetur. Pulvinar diam aenean mus
+                        dignissim eleifend consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="row mb-50 mt-100">
+          <div class="col-md-12">
+            <h2 class="sec-title text-center mb-25">
+              The Flagship <span>Programs</span>
+            </h2>
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <p class="text-center text-grey">
+                  From ideation to successful business launch, our mentorship
+                  programs assist you at every step of the journey of becoming a
+                  successful entrepreneur.
+                </p>
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+          </div>
+
+          <div class="row mt-50">
+            <div class="col-md-6">
+              <div class="price">
+                <div class="price-sub-head">
+                  <p>Flagship</p>
+                </div>
+                <div class="price-head">
+                  <h2>Incubator Program</h2>
+                </div>
+                <div class="price-desc">
+                  <p>
+                    Learn from industry titans, experience AI, build investor
+                    connections, and launch your startup. Stand out in college
+                    applications by gaining skills and real-world experience.
+                  </p>
+                </div>
+
+                <div class="price-rate">
+                  <h2>$750</h2>
+                </div>
+                <div class="price-list">
+                  <ul>
+                    <li>Duration- 6 months</li>
+                    <li>Business Launch Platform</li>
+                    <li>Investor Pitch and Funding Opportunity</li>
+                    <li>Certificate of Recognition</li>
+                    <li>Guaranteed Internship </li>
+                  </ul>
+                </div>
+                <div class="price-btn">
+                  <a href="#contact" class="button-style1">
+                    <span>Enroll Now</span>
+                    <span class="arrow-top"
+                      ><svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.48712 11.4539L11.3565 5.5845M11.3565 5.5845L6.39011 5.5845M11.3565 5.5845L11.3565 10.5509"
+                          stroke="white"
+                          stroke-width="1.14931"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path></svg
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="price">
+                <div class="price-sub-head">
+                  <p>Flagship</p>
+                </div>
+                <div class="price-head">
+                  <h2>Fastrack Program</h2>
+                </div>
+                <div class="price-desc">
+                  <p>
+                    Attend multiple guest lectures by high-profile CXOs and
+                    accelerate your entrepreneurial journey. Gain valuable
+                    insights while also connecting with like-minded peers.
+                  </p>
+                </div>
+
+                <div class="price-rate">
+                  <h2>$500</h2>
+                </div>
+                <div class="price-list">
+                  <ul>
+                    <li>Duration- 1 months</li>
+                    <li>Business Launch Platform</li>
+                    <li>Investor Pitch and Funding Opportunity</li>
+                    <li>Certificate of Recognition</li>
+                    <li>Guaranteed Internship </li>
+                  </ul>
+                </div>
+                <div class="price-btn">
+                  <a href="#contact" class="button-style1">
+                    <span>Enroll Now</span>
+                    <span class="arrow-top"
+                      ><svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.48712 11.4539L11.3565 5.5845M11.3565 5.5845L6.39011 5.5845M11.3565 5.5845L11.3565 10.5509"
+                          stroke="white"
+                          stroke-width="1.14931"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path></svg
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end client area -->
+
+    <section class="flagship-success">
+      <div class="container">
+        <div class="row mb-50">
+          <div class="col-md-12">
+            <h2 class="sec-title text-center mb-25">
+              The Flagship Way to <span>Success </span>
+            </h2>
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <p class="text-center text-grey">
+                  We employ an experiential learning approach that fosters
+                  creativity, develops entrepreneurial skills, builds
+                  long-lasting connections.
+                </p>
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="success-info">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-30">
+                <div class="success-icon">
+                  <img src="assets/images/Design.svg" alt="" />
+                </div>
+                <div class="success-text">
+                  <h4>Interactive Sessions</h4>
+                  <p>Attain classes from the AI professional trainers.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-30">
+                <div class="success-icon">
+                  <img src="assets/images/Share.svg" alt="" />
+                </div>
+                <div class="success-text">
+                  <h4>AI Exposure</h4>
+                  <p>AI-designed programs including AI tools.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-30">
+                <div class="success-icon">
+                  <img src="assets/images/Users.svg" alt="" />
+                </div>
+                <div class="success-text">
+                  <h4>1:1 Mentorship</h4>
+                  <p>AI-designed programs including AI tools.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-30">
+                <div class="success-icon">
+                  <img src="assets/images/Building.svg" alt="" />
+                </div>
+                <div class="success-text">
+                  <h4>Internship Opportunities</h4>
+                  <p>Get real experience in working with global companies.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-30">
+                <div class="success-icon">
+                  <img src="assets/images/WebDesign.svg" alt="" />
+                </div>
+                <div class="success-text">
+                  <h4>Certification</h4>
+                  <p>
+                    Enhance your college application by securing a course
+                    certification.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-30">
+                <div class="success-icon">
+                  <img src="assets/images/UserBuilding.svg" alt="" />
+                </div>
+                <div class="success-text">
+                  <h4>Investor Meets</h4>
+                  <p>
+                    A Chance to pitch leading investors from Silicon Valley.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-30">
+                <div class="success-icon">
+                  <img src="assets/images/Wallet.svg" alt="" />
+                </div>
+                <div class="success-text">
+                  <h4>$50K Funding Pot</h4>
+                  <p>Begin your business by attaining a $50k Funding Pool.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center mb-30">
+                <div class="success-icon">
+                  <img src="assets/images/BusinessLaunch.svg" alt="" />
+                </div>
+                <div class="success-text">
+                  <h4>Business Launch</h4>
+                  <p>Launch a business on our e-commerce platform.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pitch-event mt-60 mb-60">
+      <div class="container">
+        <div class="row mb-50">
+          <div class="col-md-12">
+            <h2 class="sec-title text-center mb-25">
+              The Flag <span>Pitch Event</span>
+            </h2>
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <p class="text-center text-grey">
+                  Compete with like-minded individuals and secure up to $50k for
+                  your venture by creating an appealing pitch deck and
+                  showcasing it to distinguished Silicon Valley investors.
+                </p>
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="pitch-wrap">
+              <div class="pitch-box">
+                <div class="pitch-icon">
+                  <img src="assets/images/SubmitIdea.svg" alt="" />
+                </div>
+                <div class="pitch-title">
+                  <h2>Submit Idea</h2>
+                </div>
+                <div class="pitch-desc">
+                  <p>Submit your innovative venture ideas.</p>
+                </div>
+              </div>
+
+              <div class="pitch-box">
+                <div class="pitch-icon">
+                  <img src="assets/images/PanelPitch.svg" alt="" />
+                </div>
+                <div class="pitch-title">
+                  <h2>Panel Pitch</h2>
+                </div>
+                <div class="pitch-desc">
+                  <p>Pitch to Global Investors.</p>
+                </div>
+              </div>
+
+              <div class="pitch-box">
+                <div class="pitch-icon">
+                  <img src="assets/images/Funding.svg" alt="" />
+                </div>
+                <div class="pitch-title">
+                  <h2>Funding</h2>
+                </div>
+                <div class="pitch-desc">
+                  <p>Secure up to $50k funding from trusted investors.</p>
+                </div>
+              </div>
+
+              <div class="pitch-box">
+                <div class="pitch-icon">
+                  <img src="assets/images/Certificate.svg" alt="" />
+                </div>
+                <div class="pitch-title">
+                  <h2>Certificate</h2>
+                </div>
+                <div class="pitch-desc">
+                  <p>Enhance your college application certification.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="ecommerce">
+  <div class="container">
+    <div class="row mb-50">
+      <div class="col-md-12">
+        <h2 class="sec-title text-center ">
+          Flagship E Commerce
+        </h2>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <p class="text-center text-grey">
+              Your Digital Storefront  to Create, manage, and scale your digital store with ease.
+            </p>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+<img src="assets/images/ecommerce.png" width="100%" alt="">
+      </div>
+      <div class="col-md-6">
+<div class="ecommerce-sec">
+        <div class="ecommerce-wrap">
+          <h4>Community Support</h4>
+          <p>Increase your sales with the help of the local community.</p>
+        </div>
+        <div class="ecommerce-wrap">
+          <h4>Community Support</h4>
+          <p>Increase your sales with the help of the local community.</p>
+        </div>
+        <div class="ecommerce-wrap">
+          <h4>Community Support</h4>
+          <p>Increase your sales with the help of the local community.</p>
+        </div>
+        <div class="ecommerce-wrap">
+          <h4>Community Support</h4>
+          <p>Increase your sales with the help of the local community.</p>
+        </div>
+        <div class="ecommerce-wrap">
+          <h4>Community Support</h4>
+          <p>Increase your sales with the help of the local community.</p>
+        </div>
+
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
 
-                  <div class="row">
-                    <div class="col-lg-12 col-md-12 text-center">
-                      <img class="" src="assets/images/blink1.gif" width="100%" alt="" style="max-width: 125px;">
+
+
+
+
+
+
+
+
+
+    <!-- start footer area -->
+    <footer class="home3 footer">
+      <!-- start footer-bottom area -->
+      <section class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="copyright">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-7">
+                    <p>Copyright &copy; 2023 Flagship. All Rights Reserved.</p>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-5">
+                    <ul class="d-flex justify-content-end">
+                      <li>
+                        <a
+                          target="_blank"
+                          href="instagram.com/flagshipclub_official"
+                          ><i class="flaticon flaticon-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="facebook.com/flagshipclubofficial"
+                          ><i class="flaticon flaticon-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="https://twitter.com/FlagshipClub"
+                          ><i class="flaticon flaticon-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="https://www.linkedin.com/company/flagshipclub/"
+                          ><i class="flaticon flaticon-linkedin"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="https://www.youtube.com/@flagshipclub"
+                          ><i class="flaticon flaticon-youtube-logotype"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end footer-bottom area -->
+    </footer>
+    <!-- end footer area -->
+
+    <!-- start modal area -->
+    <div
+      class="inner-page modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body" style="padding: 0">
+            <div class="home-contact">
+              <div class="row h-100">
+                <div class="col-md-12">
+                  <div class="contact-wrap">
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12 text-center">
+                        <img
+                          class=""
+                          src="assets/images/blink1.gif"
+                          width="100%"
+                          alt=""
+                          style="max-width: 125px"
+                        />
+                      </div>
                     </div>
 
-
-                  </div>
-
-                  <h5 class="mt-10 text-center">Your Slot has been booked successfully!!</h5>
-                  <div class="row mt-15">
-                    <div class="col-lg-12 text-center">
-                      <button class="button-style1" data-bs-dismiss="modal" aria-label="Close">
-                        <span>Done</span>
-
-                      </button>
+                    <h5 class="mt-10 text-center">
+                      Your Slot has been booked successfully!!
+                    </h5>
+                    <div class="row mt-15">
+                      <div class="col-lg-12 text-center">
+                        <button
+                          class="button-style1"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span>Done</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-  </div>
-  <!-- end modal area -->
+    <!-- end modal area -->
 
- <!-- jquery -->
- <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <!-- jquery -->
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
 
- <!-- bootstrap -->
- <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
- <!-- menu -->
- <script src="assets/plugins/menu.min.js"></script>
+    <!-- menu -->
+    <script src="assets/plugins/menu.min.js"></script>
 
- <!-- parallax -->
- <script src="assets/plugins/parallax.js"></script>
+    <!-- parallax -->
+    <script src="assets/plugins/parallax.js"></script>
 
- <!-- venobox -->
- <script src="assets/plugins/venobox.min.js"></script>
+    <!-- venobox -->
+    <script src="assets/plugins/venobox.min.js"></script>
 
- <!-- mixitup -->
- <script src="assets/plugins/mixitup.min.js"></script>
+    <!-- mixitup -->
+    <script src="assets/plugins/mixitup.min.js"></script>
 
- <!-- swiper slider -->
- <script src="assets/plugins/swiper-bundle.min.js"></script>
+    <!-- swiper slider -->
+    <script src="assets/plugins/swiper-bundle.min.js"></script>
 
- <!-- counterup -->
- <script src="assets/plugins/waypoint.js"></script>
- <script src="assets/plugins/jquery.counterup.min.js"></script>
+    <!-- counterup -->
+    <script src="assets/plugins/waypoint.js"></script>
+    <script src="assets/plugins/jquery.counterup.min.js"></script>
 
- <!-- skillbar hover -->
- <script src="assets/plugins/jquery-ui.min.js"></script>
- <script src="assets/plugins/visible.min.js"></script>
- <script src="assets/plugins/pro-bars.js"></script>
+    <!-- skillbar hover -->
+    <script src="assets/plugins/jquery-ui.min.js"></script>
+    <script src="assets/plugins/visible.min.js"></script>
+    <script src="assets/plugins/pro-bars.js"></script>
 
- <!-- directional hover -->
- <script src="assets/plugins/jquery.directional-hover.min.js"></script>
+    <!-- directional hover -->
+    <script src="assets/plugins/jquery.directional-hover.min.js"></script>
 
- <!-- Google map -->
- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjkssBA3hMeFtClgslO2clWFR6bRraGz0"></script>
+    <!-- Google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjkssBA3hMeFtClgslO2clWFR6bRraGz0"></script>
 
- <!-- script -->
- <script src="assets/js/script.js"></script>
-</body>
+    <!-- script -->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
