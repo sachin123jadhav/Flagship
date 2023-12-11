@@ -385,3 +385,22 @@ $(function () {
     }
   }
 });
+function flipCard(card) {
+  const cardInner = card.querySelector(".card-inner");
+  const cardFront = card.querySelector(".card-front");
+  const cardBack = card.querySelector(".card-back");
+
+  cardInner.style.transform = "rotateY(180deg)";
+  cardFront.style.display = "none";
+  cardBack.style.display = "block";
+}
+
+function unflipCard(card) {
+  const cardInner = card.querySelector(".card-inner");
+  const cardFront = card.querySelector(".card-front");
+  const cardBack = card.querySelector(".card-back");
+
+  cardInner.style.transform = "rotateY(0deg)";
+  cardFront.style.display = "block";
+  cardBack.style.display = "none";
+}
