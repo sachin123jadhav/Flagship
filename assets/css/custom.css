@@ -482,6 +482,8 @@ h1 {
   border: none;
   padding: 25px;
   border-radius: 20px;
+  transition: all 0.5s;
+  border: solid 1px transparent;
 
   .price-sub-head {
     p {
@@ -507,6 +509,11 @@ h1 {
   .price-btn {
     margin-top: 25px;
   }
+}
+
+.price:hover {
+  transform: scale(1.1);
+  border: solid 1px #fff;
 }
 
 .price-list ul li {
@@ -741,6 +748,12 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  .swiper-button-next {
+    right: 0px;
+  }
+  .swiper-button-prev {
+    left: 0px;
+  }
   .home-contact {
     margin-top: 20px;
   }
@@ -837,4 +850,59 @@ h1 {
   .footer .footer-mid .title {
     padding-bottom: 15px;
   }
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.08em solid #000;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+.success-list,
+.ecommerce-wrap {
+  padding: 15px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+.success-list:hover,
+.ecommerce-wrap:hover {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }

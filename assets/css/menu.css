@@ -67,7 +67,6 @@
   padding: 0;
 }
 
-
 .header-menu > ul > li > ul {
   top: 120px;
   background: #fff;
@@ -161,7 +160,7 @@ span.submenu-button:before {
     content: "\f067";
     display: inline-block;
     position: absolute;
-    top: 25px;
+    top: 15px;
     right: 20px;
     font-weight: 600;
     color: var(--main-dark);
