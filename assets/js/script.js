@@ -140,13 +140,15 @@ $(function () {
     loop: true,
     centeredSlides: false,
     spaceBetween: 30,
-    autoPlay: 3000,
+    autoplay: {
+      delay: 3000,
+    },
     breakpoints: {
       1920: {
-        slidesPerView: 2,
+        slidesPerView: 3,
       },
       992: {
-        slidesPerView: 2,
+        slidesPerView: 3,
       },
       768: {
         slidesPerView: 1,
@@ -159,8 +161,12 @@ $(function () {
       },
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-pagination2",
       clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 
@@ -199,6 +205,235 @@ $(function () {
     },
   });
 
+  var swiper = new Swiper(".client-slider3", {
+    observer: true,
+    observeParents: true,
+    loop: true,
+    centeredSlides: true,
+    spaceBetween: -40,
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      1920: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      320: {
+        slidesPerView: 1,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      clickable: true,
+    },
+  });
+
+  /*=====================================================================
+        09: Image Gallery
+    ======================================================================*/
+  var swiper = new Swiper(".client-slider4", {
+    observer: true,
+    observeParents: true,
+    loop: true,
+    centeredSlides: false,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      1920: {
+        slidesPerView: 4,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      320: {
+        slidesPerView: 1,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination4",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  /*=====================================================================
+        09: Image Gallery
+    ======================================================================*/
+  var swiper = new Swiper(".client-slider5", {
+    observer: true,
+    observeParents: true,
+    loop: true,
+    centeredSlides: false,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      1920: {
+        slidesPerView: 1,
+      },
+      992: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      320: {
+        slidesPerView: 1,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination4",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  /*=====================================================================
+        09: Event Slider
+    ======================================================================*/
+  var swiper = new Swiper(".client-slider6", {
+    observer: true,
+    observeParents: true,
+    loop: true,
+    centeredSlides: false,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      1920: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      320: {
+        slidesPerView: 1,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination4",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  /*=====================================================================
+        09: Event Slider
+    ======================================================================*/
+    var swiper = new Swiper(".client-slider7", {
+      observer: true,
+      observeParents: true,
+      loop: true,
+      centeredSlides: false,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        1920: {
+          slidesPerView: 5,
+        },
+        992: {
+          slidesPerView: 5,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        576: {
+          slidesPerView: 1,
+        },
+        320: {
+          slidesPerView: 1,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination7",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    /*=====================================================================
+        09: Event Slider
+    ======================================================================*/
+    var swiper = new Swiper(".client-slider8", {
+      observer: true,
+      observeParents: true,
+      loop: true,
+      centeredSlides: false,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        1920: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        576: {
+          slidesPerView: 1,
+        },
+        320: {
+          slidesPerView: 1,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination8",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   /*=====================================================================
         10: client slider
     ======================================================================*/
