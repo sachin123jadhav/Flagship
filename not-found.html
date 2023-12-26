@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- favicon css -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.jpg"
+      type="image/x-icon"
+    />
+
+    <!-- roboto font family css -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- heebo font family css -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>The Young Generation Program.</title>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
+    <!-- flaticon -->
+    <link rel="stylesheet" href="assets/font/flaticon.css" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- menu -->
+    <link rel="stylesheet" href="assets/css/menu.css" />
+
+    <!-- venobox -->
+    <link rel="stylesheet" href="assets/css/venobox.css" />
+
+    <!-- swiper-slider -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!-- skillbar -->
+    <link rel="stylesheet" href="assets/css/pro-bars.css" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <!-- spacing -->
+    <link rel="stylesheet" href="assets/css/rs-spacing.css" />
+  </head>
+
+  <body>
+    <!-- start preloader area -->
+    <div class="preloader">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+    </div>
+    <!-- end preloader area -->
+
+    <!-- start top-tp button area -->
+    <button class="home3 top-btn">
+      <i class="fas fa-angle-double-up"></i>
+    </button>
+    <!-- end top-tp button area -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
+<div class="page-wrapper">
+ <section class="apply-now">
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+ <img class="mt-100" src="assets/images/page_not_found.svg" width="100%" alt="">
+
+      </div>
+    </div>
+
+    <div class="row mt-30">
+      <div class="col-md-12">
+        <h2 class="sec-title text-center mb-0">Oops!</h2>
+        <p class="sub-title text-center">We can’t seem to find the page you are looking for</p>
+    
+      </div>
+    </div>
+
+        <div class="row text-center mt-50">
+          <div class="col-md-12">
+            <a href="#" class="btn btn-grey">Back to Homepage</a>
+            <a href="#" class="btn btn-link">Read blogs</a>
+        
+          </div>
+        </div>
+
+
+    
+  </div>
+ </section>
+
+ 
+
+
+
+
+
+
+
+</div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+
+    <!-- jquery -->
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- menu -->
+    <script src="assets/plugins/menu.min.js"></script>
+
+    <!-- parallax -->
+    <script src="assets/plugins/parallax.js"></script>
+
+    <!-- venobox -->
+    <script src="assets/plugins/venobox.min.js"></script>
+
+    <!-- mixitup -->
+    <script src="assets/plugins/mixitup.min.js"></script>
+
+    <!-- swiper slider -->
+    <script src="assets/plugins/swiper-bundle.min.js"></script>
+
+    <!-- counterup -->
+    <script src="assets/plugins/waypoint.js"></script>
+    <script src="assets/plugins/jquery.counterup.min.js"></script>
+
+    <!-- skillbar hover -->
+    <script src="assets/plugins/jquery-ui.min.js"></script>
+    <script src="assets/plugins/visible.min.js"></script>
+    <script src="assets/plugins/pro-bars.js"></script>
+
+    <!-- directional hover -->
+    <script src="assets/plugins/jquery.directional-hover.min.js"></script>
+
+    <!-- Google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjkssBA3hMeFtClgslO2clWFR6bRraGz0"></script>
+
+    <!-- script -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      function changeImage(imageId, newSrc) {
+        document.getElementById(imageId).src = newSrc;
+      }
+    </script>
+
+    <script>
+      const marqContentDown = document.getElementById("marqContentDown");
+      marqContentDown.innerHTML += marqContentDown.innerHTML; // Duplicate content for continuous scroll
+    </script>
+  </body>
+</html>

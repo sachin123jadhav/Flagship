@@ -1557,25 +1557,26 @@ h2.price-text {
 
 }
 
+.PrivacyPolicies p{color: rgba(255, 255, 255, .5);}
+.PrivacyPolicies h3{font-size: 22px;}
 
+.apply-img{width: 150px; height: 150px; object-fit: cover; border-radius: 100%;}
+.c-form{background-color: #fff; padding: 30px; border-radius: 20px;}
+.button-style6{background-color: #141414; color: #fff; padding: 15px 40px; border-radius:50px}
 
+.c-form .form-floating > .form-control, .c-form .form-select{background-color: #fff;}
 
+.more-events .title-text h4{font-size: 14px;}
+.more-events  .event-wrap{background-color: #fff; color: #000;}
+.more-events .event-wrap p{color: #000;}
 
+.button-style8{ border: solid 1px #000; padding: 10px 20px; }
+.button-style8 i, a.button-style8 {color: #000; border-radius: 50px; font-size: 15px;}
 
+.button-style8 i{transform: rotate(-45deg);;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.btn-grey{background-color: #404040; color: #fff; padding: 15px 30px; border-radius: 50px;}
+.btn-link{color: #fff; text-decoration: none;}
 
 
 
