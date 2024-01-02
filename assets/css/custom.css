@@ -8,7 +8,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 .navbar-brand img {
-  width: 190px;
+  width: 160px;
   padding-top: 15px;
 }
 .menubar .right-part {
@@ -299,24 +299,41 @@ h1 {
   background-color: #090909;
 }
 .home1.banner {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   position: relative;
   padding-bottom: 0;
   background: rgba(0, 0, 0, 0.7);
 }
+.rotate45 i{transform: rotate(-45deg); margin-left: 15px;}
 
+a:hover .arrow-top i{color: #3fff00;}
 .webinar {
-  background: rgb(70, 156, 162);
+  background: #000;
+  /* background: rgb(70, 156, 162);
   background: radial-gradient(
     at left center,
     rgba(70, 156, 162, 1) 2%,
     rgba(0, 0, 0, 1) 35%,
     rgba(0, 0, 0, 1) 34%,
     rgba(0, 0, 0, 1) 100%
-  );
+  ); */
+
+  svg{transform: scale(2); fill: var(--Green-Hue, #91F2A6);
+filter: blur(119.2447738647461px); }
 }
+
+
+.glow{position: absolute; left: 0; z-index: 0;}
+
+.glow2{right: 0; left: auto;}
+
+.powring-ai{
+   svg{transform: scale(2); fill: var(#4DE3ED);
+filter: blur(122.24456024169922px); }
+}
+
 .sec-title {
   font-size: 30px;
   line-height: 1.4;
@@ -533,14 +550,14 @@ h1 {
   top: 5px;
 }
 .powring-ai {
-  background: rgba(145, 242, 166, 1);
-  background: radial-gradient(
+  background: #000;
+  /* background: radial-gradient(
     at right center,
     rgba(145, 242, 166, 0.5) 2%,
     rgba(0, 0, 0, 1) 35%,
     rgba(0, 0, 0, 1) 34%,
     rgba(9, 9, 9, 1) 100%
-  );
+  ); */
 }
 .flagship-success {
   background-color: #090909;
@@ -1578,7 +1595,11 @@ h2.price-text {
 .btn-grey{background-color: #404040; color: #fff; padding: 15px 30px; border-radius: 50px;}
 .btn-link{color: #fff; text-decoration: none;}
 
+.header-menu ul li a{font-size: 14px;
+ }
 
+  .button-style4{font-size: 14px;line-height: 40px;
+  padding: 0 20px;}
 
 
 
