@@ -490,18 +490,20 @@ filter: blur(122.24456024169922px); }
 
 /* Price */
 .price {
-  background: rgb(58, 141, 146);
-  background: radial-gradient(
+  background:url(../images/box-bg.svg); background-size: cover; background-repeat: no-repeat;background-position: center;
+  /* background: radial-gradient(
     circle,
     rgba(58, 141, 146, 0.87156869583771) 1%,
     rgba(35, 35, 35, 1) 62%,
     rgba(35, 35, 35, 1) 100%
-  );
+  ); */
   border: none;
   padding: 25px;
   border-radius: 20px;
   transition: all 0.5s;
-  border: solid 1px transparent;
+  border: solid 1px transparent;border-radius: 10.183px;
+border: 0.636px solid #4F4F4F;
+background-color: #232323; 
 
   .price-sub-head {
     p {
@@ -560,7 +562,7 @@ filter: blur(122.24456024169922px); }
   ); */
 }
 .flagship-success {
-  background-color: #090909;
+  background-color: #000;
 }
 .success-info .success-icon {
   margin-right: 15px;
@@ -615,6 +617,7 @@ filter: blur(122.24456024169922px); }
   font-size: 20px;
 }
 .ecommerce-wrap p {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .ecommerce-sec {
@@ -627,7 +630,7 @@ filter: blur(122.24456024169922px); }
   text-align: center;
 }
 .num-title h2 {
-  font-size: 30px;
+  font-size: 30px;font-weight: 700;line-height: 1;margin-bottom: 5px;
 }
 .num-title h2 span {
   color: #3fff00;
@@ -651,6 +654,19 @@ filter: blur(122.24456024169922px); }
 .flip-card:hover .card-inner {
   transform: rotateY(180deg);
 }
+
+
+
+  .counting {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .counting.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
 .card-front,
 .card-back {
@@ -1601,7 +1617,7 @@ h2.price-text {
   .button-style4{font-size: 14px;line-height: 40px;
   padding: 0 20px;}
 
-
+.button-style1.bg-grey{background: #353535; }
 
 
 
