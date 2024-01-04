@@ -920,7 +920,7 @@ background-color: #232323; height: 100%;
 .list-circle i {
   font-size: 16px;
   color: #469ca2;
-  margin-right: 10px;
+  margin-right: 10px;margin-top: 5px;
 }
 
 .program-form {
@@ -938,22 +938,17 @@ background-color: #232323; height: 100%;
 }
 
 .transforming-idea {
-  background: radial-gradient(
-    ellipse at right,
-    rgb(77, 227, 237, 0.4) 0%,
-    #090909 65%
-  );
+   
 }
 
 .CourseCurriculum-wrap {
-  border: solid 1px #4f4f4f;
-  padding: 30px;
+
+  padding: 40px 30px;
   border-radius: 10px;
-  background: radial-gradient(
-    ellipse at right,
-    rgb(77, 227, 237, 0.6) 0%,
-    #353535 65%
-  );
+ background-image: url(../images/course-bg.png); background-repeat: no-repeat; background-size: cover; background-position: center right;
+
+  h2{line-height: 1; margin-bottom: 20px;}
+  p{color: #ABABAB; }
 }
 .CourseCurriculum-wrap h2 {
   font-size: 30px;
@@ -1058,7 +1053,7 @@ h2.price-text {
   font-size: 30px;
   color: #000;
   display: inline-block;
-  line-height: 1;
+  line-height: 1;font-weight: 600;
 }
 .footer-accordion .accordion-button {
   color: #000;
@@ -1079,7 +1074,7 @@ h2.price-text {
 
 .footer-accordion .accordion-body {
   padding-left: 80px;
-  padding-top: 0;
+  padding-top: 0;color: rgb(90, 83, 101);
 }
 .footer-accordion .accordion-button:focus {
   box-shadow: none;
@@ -1095,7 +1090,7 @@ h2.price-text {
   border-bottom: solid 1px #000;
 }
 .footer-accordion .acc-title p {
-  font-weight: 700;
+  font-weight: 700; font-size: 20px;
 }
 .second-img {
   max-width: 90%;
@@ -1631,6 +1626,19 @@ h2.price-text {
 .quries-form input:hover{ border-color: #3fff00;}
 .abt-head img{height: 100%;}
 .bg-grey{background-color: #353535;}
+
+.accordion-button::after{ background: url(../images/plus.svg); background-size: cover; background-repeat: no-repeat; width: 15px; height: 15px; padding-right: 15px;}
+
+
+.accordion-button:not(.collapsed)::after{ background: url(../images/plus-bg.svg); background-size: cover; background-repeat: no-repeat; width: 35px; height: 35px; margin-right: -10px;}
+
+
+
+
+
+
+
+
 
 
 
