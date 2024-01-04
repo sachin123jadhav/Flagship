@@ -79,73 +79,15 @@
     <!-- end top-tp button area -->
 
     <!-- start header area -->
-    <header>
-      <!-- start menubar area -->
-      <section class="home1 home3 menubar">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <nav class="navbar p-0">
-                <a class="navbar-brand p-0" href="index.html">
-                  <img src="assets/images/Logo.svg" alt="Logo" width="100%" />
-                </a>
-                <div class="header-menu position-static">
-                  <ul class="menu">
-                    <li class="active">
-                      <a href="#!"
-                        ><p>01</p>
-                        Resources</a
-                      >
-                      <ul>
-                        <li><a href="#">Resources 1</a></li>
-                        <li><a href="#">Resources 2</a></li>
-                        <li><a href="#">Resources 3</a></li>
-                      </ul>
-                    </li>
-
-                    <li>
-                      <a href="#!"
-                        ><p>02</p>
-                        Programs</a
-                      >
-                      <ul>
-                        <li><a href="#">Programs</a></li>
-                        <li><a href="#">Programs</a></li>
-                      </ul>
-                    </li>
-
-                    <li>
-                      <a href="#!"
-                        ><p>03</p>
-                        Opportunities/Events</a
-                      >
-                      <ul>
-                        <li><a href="#">Opportunities/Events</a></li>
-                        <li><a href="#">Opportunities/Events</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#!"
-                        ><p>04</p>
-                        Success Stories</a
-                      >
-                      <ul>
-                        <li><a href="#">Success Stories</a></li>
-                        <li><a href="#">Success Stories</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                <div class="right-part">
-                  <a href="#" class="button-style4 ml-10">Register Now</a>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end menubar area -->
-    </header>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("header.html")
+          .then(response => response.text())
+          .then(data => {
+            document.querySelector("body").insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
     <!-- end header area -->
 
     <section class="about-us pt-170">
@@ -464,64 +406,15 @@
  
 
     <!-- start footer area -->
-    <footer class="home3 footer">
-      <!-- start footer-bottom area -->
-      <section class="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="copyright">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-7">
-                    <p>Copyright &copy; 2023 Flagship. All Rights Reserved.</p>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-5">
-                    <ul class="d-flex justify-content-end">
-                      <li>
-                        <a
-                          target="_blank"
-                          href="instagram.com/flagshipclub_official"
-                          ><i class="flaticon flaticon-instagram"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          target="_blank"
-                          href="facebook.com/flagshipclubofficial"
-                          ><i class="flaticon flaticon-facebook"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          target="_blank"
-                          href="https://twitter.com/FlagshipClub"
-                          ><i class="flaticon flaticon-twitter"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          target="_blank"
-                          href="https://www.linkedin.com/company/flagshipclub/"
-                          ><i class="flaticon flaticon-linkedin"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          target="_blank"
-                          href="https://www.youtube.com/@flagshipclub"
-                          ><i class="flaticon flaticon-youtube-logotype"></i
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end footer-bottom area -->
-    </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.querySelector("body").insertAdjacentHTML("beforeend", data);
+        });
+    });
+  </script>
     <!-- end footer area -->
 
     <section class="">
