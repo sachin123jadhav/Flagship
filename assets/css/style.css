@@ -557,9 +557,9 @@ p {
   display: inline-block;
   line-height: 50px;
   padding: 0 25px;
-  background: var(--gradient1);
+  background: #353535;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: var(--roboto);
   border-radius: 24px;
   -webkit-border-radius: 24px;

@@ -445,9 +445,13 @@ filter: blur(122.24456024169922px); }
 .home2.client .swiper-slide-active.single-item {
   transform: scale(1);
   z-index: 999;
-  background-image: url(/assets/images/blog/Regina.png);
+ 
   background-size: cover;
   background-repeat: no-repeat;
+  background: #232323; 
+   background-image: url(/assets/images/blog/glowNew.svg);
+   background-position: right bottom;
+   
 }
 /* .swiper-container{overflow: visible;} */
 .input-group > .form-control:focus {
@@ -872,7 +876,7 @@ background-color: #232323; height: 100%;
   line-height: 1.54;
 }
 .abt-box p {
-  color: rgba(247, 247, 247, 0.5);
+  color: rgba(247, 247, 247, 0.5);padding: 25px 0;
 }
 .abt-box .row {
   justify-content: center;
@@ -926,12 +930,10 @@ background-color: #232323; height: 100%;
 .program-form {
   padding: 40px;
   border-radius: 30px;
-  border: solid 1px #4f4f4f;
-  background: radial-gradient(
-    ellipse at right,
-    rgb(77, 227, 237, 0.6) 0%,
-    #353535 65%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  background-image: url(../images/Glow.png); background-repeat: no-repeat; background-size: cover; background-position: center right;
+  border: 0.636px solid #4F4F4F; background-color: #232323; 
+ 
 }
 .abt-head li {
   margin-bottom: 15px;
@@ -945,7 +947,7 @@ background-color: #232323; height: 100%;
 
   padding: 40px 30px;
   border-radius: 10px;
- background-image: url(../images/course-bg.png); background-repeat: no-repeat; background-size: cover; background-position: center right;
+ background-image: url(../images/course-bg.png); background-repeat: no-repeat; background-size: cover; background-position:bottom;
 
   h2{line-height: 1; margin-bottom: 20px;}
   p{color: #ABABAB; }
@@ -1405,7 +1407,14 @@ h2.price-text {
   justify-content: space-between;
   border-bottom: solid 1px #fff;
   padding-bottom: 15px;
+
+  .case-date{font-size: 14px;}
+  .min-read{font-size: 14px;}
+ 
+
 }
+.case-study-sec  p{font-size: 14px;}
+
 .button-style5 {
   background-color: #fff;
   color: #000;
@@ -1416,7 +1425,7 @@ h2.price-text {
   transform: rotate(-45deg);
 }
 .case-study-sec h2 {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.4;
   margin: 15px 0;
 }
@@ -1626,13 +1635,22 @@ h2.price-text {
 .quries-form input:hover{ border-color: #3fff00;}
 .abt-head img{height: 100%;}
 .bg-grey{background-color: #353535;}
+.bg-grey2 {
+  background-color: rgb(35, 35, 35);
+}
 
 .accordion-button::after{ background: url(../images/plus.svg); background-size: cover; background-repeat: no-repeat; width: 15px; height: 15px; padding-right: 15px;}
 
 
 .accordion-button:not(.collapsed)::after{ background: url(../images/plus-bg.svg); background-size: cover; background-repeat: no-repeat; width: 35px; height: 35px; margin-right: -10px;}
-
-
+.fs-16{font-size: 16px;}
+.fs-15{font-size: 15px;}
+.fs-14{font-size: 14px;}
+.fs-13{font-size: 13px;}
+.fs-12{font-size: 12px;}
+a:hover {
+  color: #fff;
+}
 
 
 

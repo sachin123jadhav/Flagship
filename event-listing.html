@@ -1,411 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- favicon css -->
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon.jpg"
-      type="image/x-icon"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- roboto font family css -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- favicon css -->
+  <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/x-icon" />
 
-    <!-- heebo font family css -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- roboto font family css -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
 
-    <title>The Young Generation Program.</title>
+  <!-- heebo font family css -->
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="assets/css/all.min.css" />
+  <title>The Young Generation Program.</title>
 
-    <!-- flaticon -->
-    <link rel="stylesheet" href="assets/font/flaticon.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="assets/css/all.min.css" />
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- flaticon -->
+  <link rel="stylesheet" href="assets/font/flaticon.css" />
 
-    <!-- menu -->
-    <link rel="stylesheet" href="assets/css/menu.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-    <!-- venobox -->
-    <link rel="stylesheet" href="assets/css/venobox.css" />
+  <!-- menu -->
+  <link rel="stylesheet" href="assets/css/menu.css" />
 
-    <!-- swiper-slider -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <!-- venobox -->
+  <link rel="stylesheet" href="assets/css/venobox.css" />
 
-    <!-- skillbar -->
-    <link rel="stylesheet" href="assets/css/pro-bars.css" />
+  <!-- swiper-slider -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-    <!-- style -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- skillbar -->
+  <link rel="stylesheet" href="assets/css/pro-bars.css" />
 
-    <!-- responsive -->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+  <!-- style -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- style -->
-    <link rel="stylesheet" href="assets/css/custom.css" />
-    <!-- spacing -->
-    <link rel="stylesheet" href="assets/css/rs-spacing.css" />
-  </head>
-  <body class="el">
-    <!-- start preloader area -->
-    <div class="preloader">
-      <div class="circle1"></div>
-      <div class="circle2"></div>
-    </div>
-    <!-- end preloader area -->
+  <!-- responsive -->
+  <link rel="stylesheet" href="assets/css/responsive.css" />
 
-    <!-- start top-tp button area -->
-    <button class="home3 top-btn">
-      <i class="fas fa-angle-double-up"></i>
-    </button>
-    <!-- end top-tp button area -->
+  <!-- style -->
+  <link rel="stylesheet" href="assets/css/custom.css" />
+  <!-- spacing -->
+  <link rel="stylesheet" href="assets/css/rs-spacing.css" />
+</head>
 
-    <!-- start header area -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("header.html")
-          .then(response => response.text())
-          .then(data => {
-            document.querySelector("body").insertAdjacentHTML("afterbegin", data);
-          });
-      });
-    </script>
-    <!-- end header area -->
+<body class="el">
+  <!-- start preloader area -->
+  <div class="preloader">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+  </div>
+  <!-- end preloader area -->
 
-    <section class="about-us pt-170">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="pills-home-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-home"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-home"
-                  aria-selected="true"
-                >
-                  Webinars
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="pills-profile-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-profile"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-profile"
-                  aria-selected="false"
-                >
-                  Podcasts
-                </button>
-              </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-              <div
-                class="tab-pane fade show active"
-                id="pills-home"
-                role="tabpanel"
-                aria-labelledby="pills-home-tab"
-              >
-                <div class="row">
-                  <div class="col-md-12">
-                    <h1>Join Our latest Event</h1>
+  <!-- start top-tp button area -->
+  <button class="home3 top-btn">
+    <i class="fas fa-angle-double-up"></i>
+  </button>
+  <!-- end top-tp button area -->
 
-                    <section class="event mt-80">
-                      <div class="event-wrap mt-30 mb-30">
-                        <div class="row">
-                          <div class="col-md-7">
-                            <img class="left-img"
-                              src="assets/images/events/events-1.png"
-                              width="100%"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col-md-5">
-                            <div class="text-wrap">
-                              <div class="icon-title">
+  <!-- start header area -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+          document.querySelector("body").insertAdjacentHTML("afterbegin", data);
+        });
+    });
+  </script>
+  <!-- end header area -->
+
+  <section class="about-us pt-170">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                Webinars
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                Podcasts
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1>Join Our latest Event</h1>
+
+                  <section class="event mt-80">
+                    <div class="event-wrap mt-30 mb-30">
+                      <div class="row">
+                        <div class="col-md-7">
+                          <img class="left-img" src="assets/images/events/events-1.png" width="100%" alt="" />
+                        </div>
+                        <div class="col-md-5">
+                          <div class="text-wrap">
+                            <div class="icon-title">
+                              <div class="icon">
+                                <img src="assets/images/Presentation.svg" alt="" />
+                              </div>
+                              <div class="title-text">
+                                <h3>WordPress Development</h3>
+                              </div>
+                            </div>
+
+                            <div class="desc">
+                              <p class="">
+                                Become an AI-driven Entrepreneur in just 4
+                                weeks. Join our AI-enhanced entrepreneurship
+                                programs where students build businesses from
+                                scratch while
+                              </p>
+
+                              <div class="icon-title sm mb-10">
                                 <div class="icon">
-                                  <img
-                                    src="assets/images/Presentation.svg"
-                                    alt=""
-                                  />
+                                  <img src="assets/images/calender.svg" alt="" />
                                 </div>
                                 <div class="title-text">
-                                  <h3>WordPress Development</h3>
+                                  <h4>1st July 2022, Friday</h4>
                                 </div>
                               </div>
-              
-                              <div class="desc">
-                                <p class="">
-                                  Become an AI-driven Entrepreneur in just 4
-                                  weeks. Join our AI-enhanced entrepreneurship
-                                  programs where students build businesses from
-                                  scratch while
-                                </p>
-              
-                                <div class="icon-title sm mb-10">
-                                  <div class="icon">
-                                    <img
-                                      src="assets/images/calender.svg"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <div class="title-text">
-                                    <h4>1st July 2022, Friday</h4>
-                                  </div>
+
+                              <div class="icon-title sm">
+                                <div class="icon">
+                                  <img src="assets/images/clock.svg" alt="" />
                                 </div>
-              
-                                <div class="icon-title sm">
-                                  <div class="icon">
-                                    <img src="assets/images/clock.svg" alt="" />
-                                  </div>
-                                  <div class="title-text">
-                                    <h4>6:00PM IST</h4>
-                                  </div>
+                                <div class="title-text">
+                                  <h4>6:00PM IST</h4>
                                 </div>
                               </div>
-              <div class="price-btn ">
-                <a href="#contact" class="button-style1  flat-grey-btn">
-                  <span>Flagpreneurs</span>
-                  <span class="arrow-top rotate45"><i class="fas fa-arrow-right"></i></span>
-                </a>
-              
-              </div>
-                             
+                            </div>
+                            <div class="price-btn ">
+                              <a href="#contact" class="button-style1  flat-grey-btn">
+                                <span>Flagpreneurs</span>
+                                <span class="arrow-top rotate45"><i class="fas fa-arrow-right"></i></span>
+                              </a>
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="mt-80">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h5 class="mb-30">Upcoming</h5>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="client-slider6 swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="single-item swiper-slide">
+                                <div class="event-slide">
+                                  <div class="event-img">
+
+                                    <img src="assets/images/events/event-thumb-1.png" width="100%" alt="">
+                                  </div>
+                                  <div class="event-name">
+                                    <span class="ev-icon"><img src="assets/images/events/Presentation.svg"
+                                        alt=""></span> <span>
+                                      <h2>WordPress Development</h2>
+                                    </span>
+
+                                  </div>
+                                  <div class="event-desc">
+                                    Become an AI-driven Entrepreneur in just 4 weeks. Join our AI-enhanced
+                                    entrepreneurship programs where students build businesses from scratch while
+                                  </div>
+                                  <div class="event-date">
+                                    <div class="ev-icon">
+                                      <img src="assets/images/calender.svg" alt="">
+                                    </div>
+                                    <div class="ev-desc">
+                                      1st July 2022, Friday
+                                    </div>
+
+                                  </div>
+                                  <div class="event-date">
+                                    <div class="ev-icon">
+                                      <img src="assets/images/clock.svg" alt="">
+                                    </div>
+                                    <div class="ev-desc">
+                                      6:00PM IST
+                                    </div>
+
+                                  </div>
+
+                                  <div class="price-btn mt-35">
+                                    <a href="#contact" class="button-style6  flat-grey-btn fs-15">
+                                      <span>Event Details</span>
+                                      <span class="arrow-top rotate45"><i class="fas fa-arrow-right"></i></span>
+                                    </a>
+
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="single-item swiper-slide">
+                                <div class="event-slide">
+                                  <div class="event-img">
+
+                                    <img src="assets/images/events/event-thumb-2.png" width="100%" alt="">
+                                  </div>
+                                  <div class="event-name">
+                                    <span class="ev-icon"><img src="assets/images/events/Presentation.svg"
+                                        alt=""></span> <span>
+                                      <h2>WordPress Development</h2>
+                                    </span>
+
+                                  </div>
+                                  <div class="event-desc">
+                                    Become an AI-driven Entrepreneur in just 4 weeks. Join our AI-enhanced
+                                    entrepreneurship programs where students build businesses from scratch while
+                                  </div>
+                                  <div class="event-date">
+                                    <div class="ev-icon">
+                                      <img src="assets/images/calender.svg" alt="">
+                                    </div>
+                                    <div class="ev-desc">
+                                      1st July 2022, Friday
+                                    </div>
+
+                                  </div>
+                                  <div class="event-date">
+                                    <div class="ev-icon">
+                                      <img src="assets/images/clock.svg" alt="">
+                                    </div>
+                                    <div class="ev-desc">
+                                      6:00PM IST
+                                    </div>
+
+                                  </div>
+
+                                  <div class="price-btn mt-35">
+                                    <a href="#contact" class="button-style6  flat-grey-btn fs-15">
+                                      <span>Event Details</span>
+                                      <span class="arrow-top rotate45"><i class="fas fa-arrow-right"></i></span>
+                                    </a>
+
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="single-item swiper-slide">
+                                <div class="event-slide">
+                                  <div class="event-img">
+
+                                    <img src="assets/images/events/event-thumb-3.png" width="100%" alt="">
+                                  </div>
+                                  <div class="event-name">
+                                    <span class="ev-icon"><img src="assets/images/events/Presentation.svg"
+                                        alt=""></span> <span>
+                                      <h2>WordPress Development</h2>
+                                    </span>
+
+                                  </div>
+                                  <div class="event-desc">
+                                    Become an AI-driven Entrepreneur in just 4 weeks. Join our AI-enhanced
+                                    entrepreneurship programs where students build businesses from scratch while
+                                  </div>
+                                  <div class="event-date">
+                                    <div class="ev-icon">
+                                      <img src="assets/images/calender.svg" alt="">
+                                    </div>
+                                    <div class="ev-desc">
+                                      1st July 2022, Friday
+                                    </div>
+
+                                  </div>
+                                  <div class="event-date">
+                                    <div class="ev-icon">
+                                      <img src="assets/images/clock.svg" alt="">
+                                    </div>
+                                    <div class="ev-desc">
+                                      6:00PM IST
+                                    </div>
+
+                                  </div>
+
+                                  <div class="price-btn mt-35">
+                                    <a href="#contact" class="button-style6  flat-grey-btn fs-15">
+                                      <span>Event Details</span>
+                                      <span class="arrow-top rotate45"><i class="fas fa-arrow-right"></i></span>
+                                    </a>
+
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="single-item swiper-slide">
+                                <div class="event-slide">
+                                  <div class="event-img">
+
+                                    <img src="assets/images/events/event-thumb-4.png" width="100%" alt="">
+                                  </div>
+                                  <div class="event-name">
+                                    <span class="ev-icon"><img src="assets/images/events/Presentation.svg"
+                                        alt=""></span> <span>
+                                      <h2>WordPress Development</h2>
+                                    </span>
+
+                                  </div>
+                                  <div class="event-desc">
+                                    Become an AI-driven Entrepreneur in just 4 weeks. Join our AI-enhanced
+                                    entrepreneurship programs where students build businesses from scratch while
+                                  </div>
+                                  <div class="event-date">
+                                    <div class="ev-icon">
+                                      <img src="assets/images/calender.svg" alt="">
+                                    </div>
+                                    <div class="ev-desc">
+                                      1st July 2022, Friday
+                                    </div>
+
+                                  </div>
+                                  <div class="event-date">
+                                    <div class="ev-icon">
+                                      <img src="assets/images/clock.svg" alt="">
+                                    </div>
+                                    <div class="ev-desc">
+                                      6:00PM IST
+                                    </div>
+
+                                  </div>
+
+                                  <div class="price-btn mt-35">
+                                    <a href="#contact" class="button-style6  flat-grey-btn fs-15">
+                                      <span>Event Details</span>
+                                      <span class="arrow-top rotate45"><i class="fas fa-arrow-right"></i></span>
+                                    </a>
+
+                                  </div>
+                                </div>
+
+                              </div>
                             </div>
                           </div>
+
                         </div>
                       </div>
-                    </section>
+                    </div>
 
-                    <section class="mt-80">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <h5 class="mb-30">Upcoming</h5>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="client-slider6 swiper-container">
-                              <div class="swiper-wrapper">
-                                <div class="single-item swiper-slide">
-                                  <div class="event-slide">
-                                    <div class="event-img">
-                                      
-<img src="assets/images/events/event-thumb-1.png" width="100%" alt="">
-                                    </div>
-                                    <div class="event-name">
-                                      <span class="ev-icon"><img src="assets/images/events/Presentation.svg"  alt=""></span> <span><h2>WordPress Development</h2></span>
-                                        
-                                    </div>
-                                    <div class="event-desc">
-                                      Become an AI-driven Entrepreneur in just 4 weeks. Join our AI-enhanced entrepreneurship programs where students build businesses from scratch while 
-                                    </div>
-                                    <div class="event-date">
-                                      <div class="ev-icon">
-<img src="assets/images/calender.svg" alt="">
-                                      </div>
-                                      <div class="ev-desc">
-                                        1st July 2022, Friday 
-                                      </div>
-
-                                    </div>
-                                    <div class="event-date">
-                                      <div class="ev-icon">
-<img src="assets/images/clock.svg" alt="">
-                                      </div>
-                                      <div class="ev-desc">
-                                        6:00PM IST
-                                      </div>
-
-                                    </div>
-
-                                    <a href="#" class="button-style1 mt-20">
-                                      <span>Event Details</span>
-                                      <span class="arrow-top"><svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M5.48712 11.4539L11.3565 5.5845M11.3565 5.5845L6.39011 5.5845M11.3565 5.5845L11.3565 10.5509" stroke="white" stroke-width="1.14931" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                                    </a>
-                                  </div>
-                              
-                                </div>
-                                <div class="single-item swiper-slide">
-                                  <div class="event-slide">
-                                    <div class="event-img">
-                                      
-<img src="assets/images/events/event-thumb-2.png" width="100%" alt="">
-                                    </div>
-                                    <div class="event-name">
-                                      <span class="ev-icon"><img src="assets/images/events/Presentation.svg"  alt=""></span> <span><h2>WordPress Development</h2></span>
-                                        
-                                    </div>
-                                    <div class="event-desc">
-                                      Become an AI-driven Entrepreneur in just 4 weeks. Join our AI-enhanced entrepreneurship programs where students build businesses from scratch while 
-                                    </div>
-                                    <div class="event-date">
-                                      <div class="ev-icon">
-<img src="assets/images/calender.svg" alt="">
-                                      </div>
-                                      <div class="ev-desc">
-                                        1st July 2022, Friday 
-                                      </div>
-
-                                    </div>
-                                    <div class="event-date">
-                                      <div class="ev-icon">
-<img src="assets/images/clock.svg" alt="">
-                                      </div>
-                                      <div class="ev-desc">
-                                        6:00PM IST
-                                      </div>
-
-                                    </div>
-
-                                    <a href="#" class="button-style1 mt-20">
-                                      <span>Event Details</span>
-                                      <span class="arrow-top"><svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M5.48712 11.4539L11.3565 5.5845M11.3565 5.5845L6.39011 5.5845M11.3565 5.5845L11.3565 10.5509" stroke="white" stroke-width="1.14931" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                                    </a>
-                                  </div>
-                              
-                                </div>
-                                <div class="single-item swiper-slide">
-                                  <div class="event-slide">
-                                    <div class="event-img">
-                                      
-<img src="assets/images/events/event-thumb-3.png" width="100%" alt="">
-                                    </div>
-                                    <div class="event-name">
-                                      <span class="ev-icon"><img src="assets/images/events/Presentation.svg"  alt=""></span> <span><h2>WordPress Development</h2></span>
-                                        
-                                    </div>
-                                    <div class="event-desc">
-                                      Become an AI-driven Entrepreneur in just 4 weeks. Join our AI-enhanced entrepreneurship programs where students build businesses from scratch while 
-                                    </div>
-                                    <div class="event-date">
-                                      <div class="ev-icon">
-<img src="assets/images/calender.svg" alt="">
-                                      </div>
-                                      <div class="ev-desc">
-                                        1st July 2022, Friday 
-                                      </div>
-
-                                    </div>
-                                    <div class="event-date">
-                                      <div class="ev-icon">
-<img src="assets/images/clock.svg" alt="">
-                                      </div>
-                                      <div class="ev-desc">
-                                        6:00PM IST
-                                      </div>
-
-                                    </div>
-
-                                    <a href="#" class="button-style1 mt-20">
-                                      <span>Event Details</span>
-                                      <span class="arrow-top"><svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M5.48712 11.4539L11.3565 5.5845M11.3565 5.5845L6.39011 5.5845M11.3565 5.5845L11.3565 10.5509" stroke="white" stroke-width="1.14931" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                                    </a>
-                                  </div>
-                              
-                                </div>
-                                <div class="single-item swiper-slide">
-                                  <div class="event-slide">
-                                    <div class="event-img">
-                                      
-<img src="assets/images/events/event-thumb-4.png" width="100%" alt="">
-                                    </div>
-                                    <div class="event-name">
-                                      <span class="ev-icon"><img src="assets/images/events/Presentation.svg"  alt=""></span> <span><h2>WordPress Development</h2></span>
-                                        
-                                    </div>
-                                    <div class="event-desc">
-                                      Become an AI-driven Entrepreneur in just 4 weeks. Join our AI-enhanced entrepreneurship programs where students build businesses from scratch while 
-                                    </div>
-                                    <div class="event-date">
-                                      <div class="ev-icon">
-<img src="assets/images/calender.svg" alt="">
-                                      </div>
-                                      <div class="ev-desc">
-                                        1st July 2022, Friday 
-                                      </div>
-
-                                    </div>
-                                    <div class="event-date">
-                                      <div class="ev-icon">
-<img src="assets/images/clock.svg" alt="">
-                                      </div>
-                                      <div class="ev-desc">
-                                        6:00PM IST
-                                      </div>
-
-                                    </div>
-
-                                    <a href="#" class="button-style1 mt-20">
-                                      <span>Event Details</span>
-                                      <span class="arrow-top"><svg width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M5.48712 11.4539L11.3565 5.5845M11.3565 5.5845L6.39011 5.5845M11.3565 5.5845L11.3565 10.5509" stroke="white" stroke-width="1.14931" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                                    </a>
-                                  </div>
-                              
-                                </div>
-                              </div>
-                          </div>
-                            
-                          </div>
+                  </section>
+                  <section class="mt-80">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h5 class="mb-30">Past Events</h5>
                         </div>
                       </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="mb-80">
+                            <img src="assets/images/events/event-thumb-1.png" width="100%" alt="">
 
-                    </section>
+                            <h6 class="pt-20">WordPress Development</h6>
+                          </div>                       
+                  
+                        </div>
+                        <div class="col-md-4">
+                          <div class="mb-80">
+                            <img src="assets/images/events/event-thumb-2.png" width="100%" alt="">
+                        
+                            <h6 class="pt-20">WordPress Development</h6>
+                          </div>
+                        
+                        </div>
+                        <div class="col-md-4">
+                          <div class="mb-80">
+                            <img src="assets/images/events/event-thumb-3.png" width="100%" alt="">
+                        
+                            <h6 class="pt-20">WordPress Development</h6>
+                          </div>
+                        
+                        </div>
+                          <div class="col-md-4">
+                            <div class="mb-80">
+                              <img src="assets/images/events/event-thumb-1.png" width="100%" alt="">
+                          
+                              <h6 class="pt-20">WordPress Development</h6>
+                            </div>
+                          
+                          </div>
+                          <div class="col-md-4">
+                            <div class="mb-80">
+                              <img src="assets/images/events/event-thumb-2.png" width="100%" alt="">
+                          
+                              <h6 class="pt-20">WordPress Development</h6>
+                            </div>
+                          
+                          </div>
+                          <div class="col-md-4">
+                            <div class="mb-80">
+                              <img src="assets/images/events/event-thumb-3.png" width="100%" alt="">
+                          
+                              <h6 class="pt-20">WordPress Development</h6>
+                            </div>
+                          
+                          </div>
+                      </div>
+                    </div>
+                  
+                  </section>
 
-               
 
 
 
-                  </div>
+
                 </div>
               </div>
-              <div
-                class="tab-pane fade"
-                id="pills-profile"
-                role="tabpanel"
-                aria-labelledby="pills-profile-tab"
-              >
-                <p>2nd tab</p>
-              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <p>2nd tab</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
- 
 
-    <!-- start footer area -->
+
+  <!-- start footer area -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       fetch("footer.html")
@@ -415,53 +451,54 @@
         });
     });
   </script>
-    <!-- end footer area -->
+  <!-- end footer area -->
 
-    <section class="">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12"></div>
-        </div>
+  <section class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12"></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- jquery -->
-    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+  <!-- jquery -->
+  <script src="assets/plugins/jquery-3.4.1.min.js"></script>
 
-    <!-- bootstrap -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- bootstrap -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-    <!-- menu -->
-    <script src="assets/plugins/menu.min.js"></script>
+  <!-- menu -->
+  <script src="assets/plugins/menu.min.js"></script>
 
-    <!-- parallax -->
-    <script src="assets/plugins/parallax.js"></script>
+  <!-- parallax -->
+  <script src="assets/plugins/parallax.js"></script>
 
-    <!-- venobox -->
-    <script src="assets/plugins/venobox.min.js"></script>
+  <!-- venobox -->
+  <script src="assets/plugins/venobox.min.js"></script>
 
-    <!-- mixitup -->
-    <script src="assets/plugins/mixitup.min.js"></script>
+  <!-- mixitup -->
+  <script src="assets/plugins/mixitup.min.js"></script>
 
-    <!-- swiper slider -->
-    <script src="assets/plugins/swiper-bundle.min.js"></script>
+  <!-- swiper slider -->
+  <script src="assets/plugins/swiper-bundle.min.js"></script>
 
-    <!-- counterup -->
-    <script src="assets/plugins/waypoint.js"></script>
-    <script src="assets/plugins/jquery.counterup.min.js"></script>
+  <!-- counterup -->
+  <script src="assets/plugins/waypoint.js"></script>
+  <script src="assets/plugins/jquery.counterup.min.js"></script>
 
-    <!-- skillbar hover -->
-    <script src="assets/plugins/jquery-ui.min.js"></script>
-    <script src="assets/plugins/visible.min.js"></script>
-    <script src="assets/plugins/pro-bars.js"></script>
+  <!-- skillbar hover -->
+  <script src="assets/plugins/jquery-ui.min.js"></script>
+  <script src="assets/plugins/visible.min.js"></script>
+  <script src="assets/plugins/pro-bars.js"></script>
 
-    <!-- directional hover -->
-    <script src="assets/plugins/jquery.directional-hover.min.js"></script>
+  <!-- directional hover -->
+  <script src="assets/plugins/jquery.directional-hover.min.js"></script>
 
-    <!-- Google map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjkssBA3hMeFtClgslO2clWFR6bRraGz0"></script>
+  <!-- Google map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjkssBA3hMeFtClgslO2clWFR6bRraGz0"></script>
 
-    <!-- script -->
-    <script src="assets/js/script.js"></script>
-  </body>
+  <!-- script -->
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
