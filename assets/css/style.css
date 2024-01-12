@@ -587,7 +587,7 @@ p {
   font-weight: normal;
 }
 .button-style1:hover {
-  background: var(--gradient1a);
+  /* background: var(--gradient1a); */
   color: var(--white);
 }
 .button-style2:hover {

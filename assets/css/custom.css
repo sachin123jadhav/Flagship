@@ -780,6 +780,10 @@ background-color: #232323; height: 100%;
 .nav-bullet .swiper-pagination-bullet-active {
   background: #3fff00;
 }
+.testimonials-1{background-image: url(../images/planet.png);
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;}
 
 .testimonials-1 .testimonials-wrap {
   background-color: #fff;
@@ -1038,9 +1042,7 @@ background-color: #232323; height: 100%;
   margin-bottom: 30px;
   margin-top: 25px;
 }
-.learn-skill img {
-  height: 100%;
-}
+
 h2.price-text {
   font-size: 50px;
 }
@@ -1101,6 +1103,7 @@ h2.price-text {
 .third-img {
   height: fit-content;
   align-self: center;
+  max-width: 70%;
 }
 
 .steps {
@@ -1139,13 +1142,15 @@ h2.price-text {
   h2 {
     font-size: 20px;
   }
+ .swiper-button-prev,
+  .swiper-button-next{width: 80px; height: 80px;}
 
   .swiper-button-prev::after,
   .swiper-button-next::after {
     font-size: 25px;
     color: #fff;
-    width: 50px;
-    height: 49px;
+    width: 70px;
+    height: 70px;
     border: solid 1px #fff;
     padding: 20px;
     display: flex;
@@ -1153,8 +1158,17 @@ h2.price-text {
     justify-content: center;
     border-radius: 50%;
   }
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+    border-color: #3fff00;
+    color: #3fff00;
+}
+
+.swiper-button-prev{left: -100px;}
   .swiper-button-next {
     font-size: 25px;
+    right: -100px;
   }
 }
 .filter .form-select {
@@ -1351,8 +1365,8 @@ h2.price-text {
 }
 
 .small-event {
-  border-radius: 10px;
-  margin-bottom: 20px;
+  border-radius: 0px;
+  margin-bottom: 50px;
 
   .icon-title {
     .icon {
@@ -1363,7 +1377,11 @@ h2.price-text {
     }
   }
   .text-wrap {
-    padding: 15px 15px 15px 0;
+    padding: 0px 15px 0px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .title-text h3 {
       font-size: 18px;
@@ -1374,11 +1392,25 @@ h2.price-text {
         font-size: 12px;
         font-weight: 400;
       }
+
+     
+      
     }
+     .price-details{
+span{position: relative;padding: 0 4px;}
+        span::after{content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #3fff00;
+        bottom: 8px;
+        left: 0; }
+      }
   }
   .button-style1 {
-    font-size: 14px;
-    line-height: 40px;
+    font-size: 12px;
+    line-height: 40px;align-self: flex-start;
+    margin: auto 0 0 auto;
   }
 }
 
@@ -1643,6 +1675,10 @@ h2.price-text {
 
 
 .accordion-button:not(.collapsed)::after{ background: url(../images/plus-bg.svg); background-size: cover; background-repeat: no-repeat; width: 35px; height: 35px; margin-right: -10px;}
+.fs-20{font-size: 20px !important;}
+.fs-19{font-size: 19px !important;}
+.fs-18{font-size: 18px !important;}
+.fs-17{font-size: 17px;}
 .fs-16{font-size: 16px;}
 .fs-15{font-size: 15px;}
 .fs-14{font-size: 14px;}
@@ -1652,9 +1688,11 @@ a:hover {
   color: #fff;
 }
 
-
-
-
+.course-benifit h1{font-size: 60px; }
+.learn-skill .certification{position: absolute; width: 50%; right: 0; height: 100%; text-align: right;}
+.learn-skill img {
+  height: 90%;
+}
 
 
 
@@ -1663,7 +1701,7 @@ a:hover {
 
 @media (min-width: 1200px) {
   .how-we-works h1 {
-    font-size: 55px;
+    font-size: 90px;
   }
 }
 
