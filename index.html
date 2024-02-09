@@ -139,13 +139,16 @@
                     <img src="assets/images/Discount.svg" width="100%" alt="" />
                   </div>
                   <div class="discount-text">
-                    <h2>20% DISCOUNT TO FIRST 100 STUDENTS</h2>
+                    <h2 class="fw-4">20% DISCOUNT TO FIRST 100 STUDENTS</h2>
                   </div>
                 </div>
                 <h2 class="banner-head">
                   The Young <br />
                   Generation<br />
-                  <span class="typewriter">Entrepreneurship</span><br />
+                  <!-- <span class="typewriter">Entrepreneurship</span><br /> -->
+                  <span class="word wisteria">Entrepreneurship</span>
+                  <span class="word belize">Entrepreneurship1</span>
+                  <span class="word pomegranate">Entrepreneurship2</span><br>
                   Program.
                 </h2>
                 <p>
@@ -161,9 +164,12 @@
     </section>
     <!-- end banner area -->
 
-    <section class="webinar pt-150 pb-100">
+    <section class="webinar pt-150 pb-100 relative">
+
+
+      <div class="gradient-balll-blue"></div>
     
-      <div class="glow glow1"><svg width="511" height="782" viewBox="0 0 411 682" fill="none"
+      <!-- <div class="glow glow1"><svg width="511" height="782" viewBox="0 0 411 682" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_f_1043_5793)">
             <circle cx="69.962" cy="340.962" r="95.962" fill="#4DE3ED" />
@@ -176,21 +182,21 @@
               <feGaussianBlur stdDeviation="122.245" result="effect1_foregroundBlur_1043_5793" />
             </filter>
           </defs>
-        </svg></div>
+        </svg></div> -->
       <div class="container relative z-9">
         <div class="row">
           <div class="col-md-12">
             <h2 class="sec-title text-center mb-35" >
-              Upcoming Event
+              Upcoming Webinar or latest event
             </h2>
           </div>
         </div>
         <div class="box-sec">
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-6">
               <img src="assets/images/sec-1.jpg" width="100%" alt="" />
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
               <div class="text-setion">
                 <div class="text-wrap">
                   <h3 class="mb-15">Flag Pitch Event</h3>
@@ -235,12 +241,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="price-btn">
-                    <a href="#contact" class="button-style1 bg-grey">
-                      <span>Event Details</span>
-                      <span class="arrow-top rotate45"><i class="fas fa-arrow-right"></i></span>
-                    </a>
-                  </div>
+                 
                  
                 </div>
               </div>
@@ -282,7 +283,7 @@
                 <img src="assets/images/ChatGPT.svg" alt="" />
               </div>
               <div class="gpt-text">
-                <p>
+              <p id="typewriter-text">
                   FlagGpt is a computer program that simulates human
                   conversation through voice commands or text chats or both. It
                   can be integrated with various messaging platforms like
@@ -318,7 +319,8 @@
 
     <!-- start client area -->
     <section class="home2 client powring-ai pb-120 sm-pb-30">
-      <div class="glow glow2"><svg width="410" height="665" viewBox="0 0 410 665" fill="none"
+      <div class="gradient-balll-green">sdfsd sdfsdfsdfsdfsdfdsf</div>
+      <!-- <div class="glow glow2"><svg width="410" height="665" viewBox="0 0 410 665" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_f_1043_5792)">
             <circle cx="332.607" cy="332.607" r="93.6072" fill="#91F2A6" />
@@ -331,7 +333,7 @@
               <feGaussianBlur stdDeviation="119.245" result="effect1_foregroundBlur_1043_5792" />
             </filter>
           </defs>
-        </svg></div>
+        </svg></div> -->
       <div class="container">
         <div class="row mb-50">
           <div class="col-md-12">
@@ -795,6 +797,7 @@
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
@@ -879,7 +882,30 @@
             </div>
           </div>
         </div>
+
         <div class="row">
+          <div class="col-md-3 ">
+              <div class="num-title">
+
+            <h2 id="section1" class="text-center">
+            
+              <span class="counter text-white" data-target="5">-10</span><span class="text-green">+</span> years
+            </h2>
+            </div>
+            <div class="text-center">
+              <p>In Education</p>
+            </div>
+           
+          </div>
+          <div class="col-md-3"><div id="section2" class="container py-5">
+            <span class="counter" data-target="750">0</span> <span class="text-green">+</span>
+          </div></div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+          
      
           <div class="col-md-3">
             <div class="num-wrap">
@@ -1170,6 +1196,45 @@
 
 
 
+<script>
+  // Function to start the counter animation
+  function startCounterAnimation(counter) {
+    const target = +counter.getAttribute('data-target');
+    const speed = 300; // The lower the value, the faster the animation
+    const increment = target / speed;
+
+    const updateCounter = () => {
+      const value = +counter.innerText;
+      if (value < target) {
+        counter.innerText = Math.ceil(value + increment);
+        setTimeout(updateCounter, 1);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCounter();
+  }
+
+  // Create an Intersection Observer to start counter animations when sections come into view
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counter = entry.target.querySelector('.counter');
+        if (counter) {
+          startCounterAnimation(counter);
+          observer.unobserve(entry.target);
+        }
+      }
+    });
+  }, { threshold: 0.5 });
+
+  // Observe each section
+  document.querySelectorAll('.container').forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -1227,6 +1292,82 @@
       }
     </script>
 
+
+<script>
+    $(document).ready(function() {
+      var text = $("#typewriter-text").text();
+      var newText = "";
+      var delay = 50; // milliseconds
+
+      for (var i = 0; i < text.length; i++) {
+        newText += '<span style="display:none;">' + text[i] + '</span>';
+      }
+
+      $("#typewriter-text").html(newText);
+
+      $("#typewriter-text span").each(function(index) {
+        $(this).delay(delay * index).fadeIn(500);
+      });
+    });
+  </script>
+<script>
+  var words = document.getElementsByClassName('word');
+    var wordArray = [];
+    var currentWord = 0;
+
+    words[currentWord].style.opacity = 1;
+    for (var i = 0; i < words.length; i++) {
+      splitLetters(words[i]);
+    }
+
+    function changeWord() {
+      var cw = wordArray[currentWord];
+      var nw = currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
+      for (var i = 0; i < cw.length; i++) {
+        animateLetterOut(cw, i);
+      }
+
+      for (var i = 0; i < nw.length; i++) {
+        nw[i].className = 'letter behind';
+        nw[0].parentElement.style.opacity = 1;
+        animateLetterIn(nw, i);
+      }
+
+      currentWord = (currentWord == wordArray.length - 1) ? 0 : currentWord + 1;
+    }
+
+    function animateLetterOut(cw, i) {
+      setTimeout(function () {
+        cw[i].className = 'letter out';
+      }, i * 80);
+    }
+
+    function animateLetterIn(nw, i) {
+      setTimeout(function () {
+        nw[i].className = 'letter in';
+      }, 340 + (i * 80));
+    }
+
+    function splitLetters(word) {
+      var content = word.innerHTML;
+      word.innerHTML = '';
+      var letters = [];
+      for (var i = 0; i < content.length; i++) {
+        var letter = document.createElement('span');
+        letter.className = 'letter';
+        letter.innerHTML = content.charAt(i);
+        word.appendChild(letter);
+        letters.push(letter);
+      }
+
+      wordArray.push(letters);
+    }
+
+    changeWord();
+    setInterval(changeWord, 4000);
+  
+
+</script>
 
     
   </body>
