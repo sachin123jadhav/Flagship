@@ -936,7 +936,7 @@ background-color: #232323; height: 100%;
 
 .program-form {
   padding: 40px;
-  border-radius: 30px;
+  border-radius: 10px;
 
   background-image: url(../images/Glow.png); background-repeat: no-repeat; background-size: cover; background-position: center right;
   border: 0.636px solid #4F4F4F; background-color: #232323; 
@@ -1326,30 +1326,25 @@ h2.price-text {
     border-color: #000;
   }
 }
+.success-list p{color: rgba(255, 255, 255, 0.7);}
 
 .success-list,
 .ecommerce-wrap {
   padding: 15px;
   background: transparent;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease; border-radius: 20px;
 }
 .success-list:hover,
 .ecommerce-wrap:hover {
   background: rgb(0, 0, 0);
   background: -moz-linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 100%
+    180deg, rgba(255, 255, 255, .2) 0%, #000 100% 
   );
   background: -webkit-linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 100%
+   180deg, rgba(255, 255, 255, .2) 0%, #000 100% 
   );
   background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 100%
+   180deg, rgba(255, 255, 255, .2) 0%, #000 100% 
   );
 }
 .event-wrap .text-wrap {
@@ -1697,6 +1692,121 @@ a:hover {
 .learn-skill img {
   height: 90%;
 }
+.flip-card{
+  h5{margin-top: 15px;}
+  p{color: #F2F2F2;}
+}
+.form-floating > label{padding:.75rem;}
+.form-floating > .form-control, .form-floating > .form-select{padding:.75rem;height: calc(3rem + 2px);}
+.program-form{
+h3{font-size: 30px;}
+
+}
+
+
+
+
+
+
+.sales-cards-wapper {
+  grid-row-gap: 24px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 32px;
+  display: flex;
+  position: relative;
+}
+
+.sales-cards-wapper.is--grid {
+  grid-column-gap: 16px;
+  grid-row-gap: 24px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  justify-items: center;
+  display: grid;
+}
+
+.sales-card {
+  height: 100%; 
+  
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.sales-card.is--1 {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 120px;
+}
+
+.sales-card.is--3 {
+  z-index: 3;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 120px;
+}
+
+
+
+.sales-card.is--2 {
+  z-index: 2;
+ 
+  position: -webkit-sticky;
+  position: sticky;
+  top: 120px;
+}
+
+
+
+
+.sales-card-bg-image.is--2 {
+  height: auto;
+}
+
+.sales-card-bg-image.is--3, .sales-card-bg-image.is--5, .sales-card-bg-image.is--5 {
+  height: 100%;
+}
+
+.sales-card-bg-image.is--6 {
+  height: 100%;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+
+
+.section-sales-testimonials-2.overflow-hidden {
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1943,8 +2053,8 @@ a:hover {
 /* Typography */
 
 .fw-4{font-weight: 400;}
-
-
+.fw-5{font-weight: 500;}
+.fw-6{font-weight: 600;}
 
 
 

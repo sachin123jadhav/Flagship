@@ -328,7 +328,7 @@ $(function () {
     centeredSlides: false,
     spaceBetween: 30,
     autoplay: {
-      delay: 3000,
+      delay: 2000,
     },
     breakpoints: {
       1920: {
