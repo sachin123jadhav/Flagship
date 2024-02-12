@@ -1674,6 +1674,9 @@ span{position: relative;padding: 0 4px;}
 
 
 .accordion-button:not(.collapsed)::after{ background: url(../images/plus-bg.svg); background-size: cover; background-repeat: no-repeat; width: 35px; height: 35px; margin-right: -10px;}
+.fs-50{font-size: 50px !important;}
+.fs-40{font-size: 40px !important;}
+.fs-35{font-size: 35px !important;}
 .fs-30{font-size: 30px !important;}
 .fs-28{font-size: 25px !important;}
 .fs-24{font-size: 24px !important;}
@@ -1792,8 +1795,24 @@ h3{font-size: 30px;}
 
 .event-wrap.small-event a.button-style1:hover .arrow-top svg{fill: #16a085 !important;}
 
+.form-floating select + label {
+ top: -8px;
+}
 
+.event-wrap.small-event{
 
+  border-radius: 15px;
+
+  .event-wrap .text-wrap p {
+ 
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ .text-wrap {
+    padding: 9px 15px 10px 0;}
+}
 
 
 
