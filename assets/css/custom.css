@@ -1814,10 +1814,19 @@ h3{font-size: 30px;}
     padding: 9px 15px 10px 0;}
 }
 
+.not-found-social{
+padding: 120px 0;
+
+a{background-color: rgba(63, 255, 0, .1);  margin: 5px; display: flex; width: 60px; height: 60px; align-items: center; justify-content: center;
+  font-size: 30px; border-radius: 15px;
+  ;}
+
+}
 
 
-
-
+.btn-link:hover {
+  color: #3fff00;
+}
 
 
 
