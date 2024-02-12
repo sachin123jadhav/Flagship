@@ -832,7 +832,7 @@ background-color: #232323; height: 100%;
 /* Icon Box */
 .icon-box {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 100px;
 
   .icon-img {
     border: none;
@@ -1674,6 +1674,9 @@ span{position: relative;padding: 0 4px;}
 
 
 .accordion-button:not(.collapsed)::after{ background: url(../images/plus-bg.svg); background-size: cover; background-repeat: no-repeat; width: 35px; height: 35px; margin-right: -10px;}
+.fs-30{font-size: 30px !important;}
+.fs-28{font-size: 25px !important;}
+.fs-24{font-size: 24px !important;}
 .fs-20{font-size: 20px !important;}
 .fs-19{font-size: 19px !important;}
 .fs-18{font-size: 18px !important;}
@@ -1787,7 +1790,7 @@ h3{font-size: 30px;}
   overflow: hidden;
 }
 
-
+.event-wrap.small-event a.button-style1:hover .arrow-top svg{fill: #16a085 !important;}
 
 
 
@@ -2105,4 +2108,73 @@ h3{font-size: 30px;}
 
 .midnight {
   color: #2c3e50;
+}
+
+.testimonials-3{
+
+p{font-size: 24px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+		.cust-coursel .carousel-inner .carousel-item > div {
+			display: none;
+		}
+		.cust-coursel .carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+	}
+
+	.cust-coursel .carousel-inner .carousel-item.active,
+	.cust-coursel .carousel-inner .carousel-item-next,
+	.cust-coursel .carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
+	/* medium and up screens */
+	@media (min-width: 768px) {
+
+		.cust-coursel .carousel-inner .carousel-item-end.active,
+		.cust-coursel .carousel-inner .carousel-item-next {
+			transform: translateX(25%);
+		}
+
+		.cust-coursel .carousel-inner .carousel-item-start.active, 
+		.cust-coursel .carousel-inner .carousel-item-prev {
+			transform: translateX(-25%);
+		}
+	}
+
+	.cust-coursel .carousel-inner .carousel-item-end,
+	.cust-coursel .carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+	}
+
+  .bg-black .carousel-item{background-color: #000;}
+
+  .carousel .case-details{
+.case-date{font-size: 14px;}
+.min-read{font-size: 14px;}
+
+
+
+  }
+
+  .carousel .price-btn a.button-style5{font-size: 14px }
+
+    .carousel .single-item {padding: 0px 30px;}
+   .carousel  .case-study-sec p {
+  font-size: 16px;
 }
